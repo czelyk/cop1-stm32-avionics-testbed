@@ -1,0 +1,46 @@
+[
+  {
+    "compiled_max_slots": 1,
+    "sections_bytes": {
+      ".text": 2424,
+      ".data": 12,
+      ".bss": 872
+    },
+    "payload_allocation_bytes": 256,
+    "scope": "Standalone adapter image with guards and test fixture; no RTOS, UART/DMA, stacks, physical timing or full firmware",
+    "elf_sha256": "f0546e57fe4aa5500e125ac5433414f0a3926255c3911b6158da16bfb1fae996"
+  },
+  {
+    "compiled_max_slots": 2,
+    "sections_bytes": {
+      ".text": 2524,
+      ".data": 12,
+      ".bss": 1152
+    },
+    "payload_allocation_bytes": 512,
+    "scope": "Standalone adapter image with guards and test fixture; no RTOS, UART/DMA, stacks, physical timing or full firmware",
+    "elf_sha256": "00ae2cf8819ef89e69f85251e46f8b594655195439cdfc35c05bca4de17d952e"
+  },
+  {
+    "compiled_max_slots": 4,
+    "sections_bytes": {
+      ".text": 2476,
+      ".data": 12,
+      ".bss": 1696
+    },
+    "payload_allocation_bytes": 1024,
+    "scope": "Standalone adapter image with guards and test fixture; no RTOS, UART/DMA, stacks, physical timing or full firmware",
+    "elf_sha256": "a99d1d147e768f4c68cd1044fcc4a0d89d04b95c9caf671b5675ff6b0b64f72b"
+  },
+  {
+    "compiled_max_slots": 8,
+    "sections_bytes": {
+      ".text": 2468,
+      ".data": 12,
+      ".bss": 2784
+    },
+    "payload_allocation_bytes": 2048,
+    "scope": "Standalone adapter image with guards and test fixture; no RTOS, UART/DMA, stacks, physical timing or full firmware",
+    "elf_sha256": "13f3c4b88f9ac1ccd682c5e8d65c8140c60771fc25f4d209ecdad270624eb188"
+  }
+]
