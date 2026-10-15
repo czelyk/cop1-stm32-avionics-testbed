@@ -1,0 +1,101 @@
+{
+  "created_from": "ctc1_next_experiment_20261014.zip",
+  "archive_sha256": "c2df37d3bf7b262ac5b1214866d36b8585150495220aee234f564df7bd081c2b",
+  "claims": "Earlier software-only source included; current Renode code not present in source archive",
+  "files": [
+    {
+      "path": "examples/arm-farm-harness/pooled_farm.c",
+      "origin": "verified uploaded research archive",
+      "source_path": "pooled_farm.c",
+      "sha256": "7db34db1829c1d331441933e4ea19005b284953c81199e24d7e2f8a84e962f8b"
+    },
+    {
+      "path": "examples/arm-farm-harness/pooled_farm.ld",
+      "origin": "verified uploaded research archive",
+      "source_path": "pooled_farm.ld",
+      "sha256": "1494c6ee0fd121749482a76e902371a1cd39241b63d67b9f77a54bc5c7104ed5"
+    },
+    {
+      "path": "examples/arm-farm-harness/capacity_variants/pooled_farm_n1.c",
+      "origin": "verified uploaded research archive",
+      "source_path": "footprints/pooled_farm_n1.c",
+      "sha256": "dd16e97fef61d34f71aae6424fe43539695abdad118765830466c099d74078ed"
+    },
+    {
+      "path": "examples/arm-farm-harness/capacity_variants/pooled_farm_n2.c",
+      "origin": "verified uploaded research archive",
+      "source_path": "footprints/pooled_farm_n2.c",
+      "sha256": "4d4fba361907cb1bca6404a43330a6eeb7f568b578fb5a0b17d915aa4d35649c"
+    },
+    {
+      "path": "examples/arm-farm-harness/capacity_variants/pooled_farm_n4.c",
+      "origin": "verified uploaded research archive",
+      "source_path": "footprints/pooled_farm_n4.c",
+      "sha256": "b18c043ff63c203bfeac4b3d437e4e1e9dd0213b77b19aed473914bd2dbd771a"
+    },
+    {
+      "path": "examples/arm-farm-harness/capacity_variants/pooled_farm_n8.c",
+      "origin": "verified uploaded research archive",
+      "source_path": "footprints/pooled_farm_n8.c",
+      "sha256": "7ea5e5221f9965756260fe60b617d1243738f1ab1e2526f96e3a04ac63083e0d"
+    },
+    {
+      "path": "tests/yamcs/VirtualPeerV2.java",
+      "origin": "verified uploaded research archive",
+      "source_path": "VirtualPeerV2.java",
+      "sha256": "974df22823b4e8330b2321fb2160789aea0acb5dd9419bf730f1b6078fdac21f"
+    },
+    {
+      "path": "tests/yamcs/TMVerifier.java",
+      "origin": "verified uploaded research archive",
+      "source_path": "TMVerifier.java",
+      "sha256": "a2ef1845cd06672c34a2415159c35a3f578067c49980086bbd8626cca55f7134"
+    },
+    {
+      "path": "results/arm-harness-footprints.json",
+      "origin": "verified uploaded research archive",
+      "source_path": "footprints/footprint_results.json",
+      "sha256": "f2ddf22e30366dbff9826ceac1988b44aff80804c214d853a15454f90fe747ad"
+    },
+    {
+      "path": "results/software-validation-summary.json",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": ".gitignore",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": ".gitattributes",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "README.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "docs/architecture-and-scope.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "docs/software-validation.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "docs/PUBLICATION-CHECKLIST.md",
+      "origin": "written organization and documentation"
+    },
+    {
+      "path": "tools/import-local-renode.ps1",
+      "origin": "written organization and documentation"
+    }
+  ]
+}

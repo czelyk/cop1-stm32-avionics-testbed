@@ -1,0 +1,13 @@
+{
+  "scope": "Saved software-only virtual-duration validation (not Renode hardware-peripheral emulation or physical MCU performance)",
+  "source": "ctc1_next_experiment_20261014.zip/evaluation_summary.json and FINAL-EVIDENCE-AUDIT.json",
+  "cases": 64,
+  "commands_original": 1536,
+  "commands_exact_sink": 1536,
+  "max_fdu_slots_used": 3,
+  "cases_with_wait": 4,
+  "predictive_model_decision_improvement_observed": false,
+  "timing_type": "assigned virtual microsecond costs",
+  "physical_timing_measured": false,
+  "notes": "Performance and prediction-study artifacts deliberately excluded from public engineering package. Full evidence remains in private original archive."
+}
