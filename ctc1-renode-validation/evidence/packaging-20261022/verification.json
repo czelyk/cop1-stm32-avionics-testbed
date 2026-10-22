@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "kind": "Renode functional emulation; no physical timing",
+  "packaged_files_verified": 93,
+  "fresh_ownership_cases": 4,
+  "fresh_exact_executions": 19,
+  "archived_cases": 25,
+  "archived_exact_commands": 600,
+  "archived_tm_crc_checks": 425,
+  "fresh_coupled_cases": 25,
+  "fresh_coupled_commands": 600,
+  "physical_measurements": false,
+  "run_directory": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d"
+}

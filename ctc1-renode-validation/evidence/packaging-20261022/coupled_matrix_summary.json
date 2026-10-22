@@ -1,0 +1,8 @@
+{
+  "completed_utc": "2026-10-22T19:17:50.766828+00:00",
+  "cases": 16,
+  "exact_source_commands": 384,
+  "exact_executions": 384,
+  "exact_sink_commands": 384,
+  "physical_measurements": false
+}

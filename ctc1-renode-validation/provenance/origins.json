@@ -1,0 +1,562 @@
+[
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\lab.py",
+    "destination": "ctc1-renode-validation\\tools\\lab.py",
+    "original_sha256": "1b45a75434723d108fad04c55557cd8f7179902c28b24f77db6993a70f950a22",
+    "curated_sha256": "1b45a75434723d108fad04c55557cd8f7179902c28b24f77db6993a70f950a22",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\run_ctc.py",
+    "destination": "ctc1-renode-validation\\tests\\run.py",
+    "original_sha256": "c3a62027a3c65544b54cad1e8455b9b6c6ed81d8b966cc3e20e53173b1a95cb4",
+    "curated_sha256": "7466f978290a9750ad51aac96a0da0f8536a74ad6ca8d12617ded16c8d5f246a",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\stm32_firmware.c",
+    "destination": "ctc1-renode-validation\\src\\stm32_firmware.c",
+    "original_sha256": "63d58d43101aa57eca94217ce325d507358d8a3ec0158b235838764bec0855a4",
+    "curated_sha256": "63d58d43101aa57eca94217ce325d507358d8a3ec0158b235838764bec0855a4",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\stm32_startup.c",
+    "destination": "ctc1-renode-validation\\src\\stm32_startup.c",
+    "original_sha256": "dba7e579e84a183100fb4e5d7ccaaf58e9245e6b94ff51fb4dda9b2a3767daee",
+    "curated_sha256": "dba7e579e84a183100fb4e5d7ccaaf58e9245e6b94ff51fb4dda9b2a3767daee",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\pool_adapter.c",
+    "destination": "ctc1-renode-validation\\src\\pool_adapter.c",
+    "original_sha256": "7db34db1829c1d331441933e4ea19005b284953c81199e24d7e2f8a84e962f8b",
+    "curated_sha256": "7db34db1829c1d331441933e4ea19005b284953c81199e24d7e2f8a84e962f8b",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\stm32.ld",
+    "destination": "ctc1-renode-validation\\src\\stm32.ld",
+    "original_sha256": "b70ff94b6bc570639da1fffe4b17650aafd367afc0018419647175088c23f844",
+    "curated_sha256": "b70ff94b6bc570639da1fffe4b17650aafd367afc0018419647175088c23f844",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\stm32_profile.repl",
+    "destination": "ctc1-renode-validation\\src\\stm32_profile.repl",
+    "original_sha256": "6962bc39c68c6e3a9f26d100795fdebfd818c081559e94fc8ecb40c912aada91",
+    "curated_sha256": "6962bc39c68c6e3a9f26d100795fdebfd818c081559e94fc8ecb40c912aada91",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\screen_renode.py",
+    "destination": "ctc1-renode-validation\\src\\screen_renode.py",
+    "original_sha256": "c6cd0f3c564419040f1722205fcd1bd7cd40ddd36d7aecdf5ed017fcb028c482",
+    "curated_sha256": "c6cd0f3c564419040f1722205fcd1bd7cd40ddd36d7aecdf5ed017fcb028c482",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\VirtualPeerV2.java",
+    "destination": "ctc1-renode-validation\\src\\VirtualPeerV2.java",
+    "original_sha256": "974df22823b4e8330b2321fb2160789aea0acb5dd9419bf730f1b6078fdac21f",
+    "curated_sha256": "7b3a39e5a24f52c220e75e9198a77081183beb65254dbdb9c9b3b622058c3ffb",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\TMVerifier.java",
+    "destination": "ctc1-renode-validation\\src\\TMVerifier.java",
+    "original_sha256": "a2ef1845cd06672c34a2415159c35a3f578067c49980086bbd8626cca55f7134",
+    "curated_sha256": "a2ef1845cd06672c34a2415159c35a3f578067c49980086bbd8626cca55f7134",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\renode_v3_controls.py",
+    "destination": "ctc1-renode-validation\\src\\renode_v3_controls.py",
+    "original_sha256": "07bd4009995efb1279216e4e32b6c6e036b0d6ca11fa0fdd91982acde739fca5",
+    "curated_sha256": "b5a8ab292ef3b9e2d92835d76b9dc3ba3b5bf9d8173a7441a7bf302de2afb4dc",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\renode_driver.py",
+    "destination": "ctc1-renode-validation\\src\\renode_driver.py",
+    "original_sha256": "fd7ded6f39500d9c2c3de838660b36dc6dd58065426a58c6f9f8325a3713bd4f",
+    "curated_sha256": "392878a43c196fe0d91a1257c052744d63b8ab9571c24cfe691fe33ab0647ac5",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\coupled_renode.py",
+    "destination": "ctc1-renode-validation\\src\\coupled_renode.py",
+    "original_sha256": "75c50b0da22f39b130e55d8537381243642db8bc95a61d56e04aa903be93d3b4",
+    "curated_sha256": "79583f4c859eca925a32abc898cd7a687b3712b92a8a4eadd3b188a752b93324",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\renode.config",
+    "destination": "ctc1-renode-validation\\src\\renode.config",
+    "original_sha256": "a54fa644f2065688f4df05d4ba396c1ba3580aa6d80aa33927076febaa4f6e0d",
+    "curated_sha256": "816afce64101d7b63d02f9768e79fe6939b3613b0b5fd201ea154057cb0b835d",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\build_ctc.py",
+    "destination": "ctc1-renode-validation\\src\\build_firmware.py",
+    "original_sha256": "a49389c0fe55b7a1567f1bd6b9fc9ad4a83ab3c9a3f980a58783739e20b16a9d",
+    "curated_sha256": "a49389c0fe55b7a1567f1bd6b9fc9ad4a83ab3c9a3f980a58783739e20b16a9d",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\pilot_cop1_ingress\\arm_shim\\cfe.h",
+    "destination": "ctc1-renode-validation\\src\\shim\\cfe.h",
+    "original_sha256": "83eafb3ab40f5cbba52fd808a13386293943d0d5869b117f95bdf34041651143",
+    "curated_sha256": "97d944a74a4e08500b8239c0624824d55a50fcc462ba31b82df21e0915862f0c",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\pilot_cop1_ingress\\arm_shim\\io_lib.h",
+    "destination": "ctc1-renode-validation\\src\\shim\\io_lib.h",
+    "original_sha256": "0a5028a12bdfeb506967100a8bd9eb7df23dde9a5a30fff44614547bce8d3a41",
+    "curated_sha256": "691d3e166a9cac3ba311fabd4447c76237cb76af45002c10f8f19b15864938e5",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\pilot_cop1_ingress\\arm_shim\\io_lib_events.h",
+    "destination": "ctc1-renode-validation\\src\\shim\\io_lib_events.h",
+    "original_sha256": "ab0e934557670d5d590a6405df4fa7ed0b4d2100102608dc7a85778a259b50f7",
+    "curated_sha256": "981c4a05015928bbde57978128bac375f629c5c57b9138a37a383f1d006db81b",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\bootstrap.py",
+    "destination": "ctc1-renode-validation\\tools\\bootstrap.py",
+    "original_sha256": "36cab15f888f06432d2e41f9cf4aa4a0f3d1023dee2352a8c13ae4353d262412",
+    "curated_sha256": "36cab15f888f06432d2e41f9cf4aa4a0f3d1023dee2352a8c13ae4353d262412",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\prepare_yamcs.py",
+    "destination": "ctc1-renode-validation\\tools\\prepare_yamcs.py",
+    "original_sha256": "ba5960e5506ce398cc12405ac92a88c4a7262abe5a85b2c054345c849820b234",
+    "curated_sha256": "ba5960e5506ce398cc12405ac92a88c4a7262abe5a85b2c054345c849820b234",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\compile_peer.py",
+    "destination": "ctc1-renode-validation\\tools\\compile_peer.py",
+    "original_sha256": "75b279a5c919e31c1f24280914211b6012851c497da6f36303eb47db8ec575d2",
+    "curated_sha256": "75b279a5c919e31c1f24280914211b6012851c497da6f36303eb47db8ec575d2",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\RENODE-VERIFIED-RESULTS.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\RENODE-VERIFIED-RESULTS.json",
+    "original_sha256": "a3d43bea6543391fa818142f87521a320dfed04e950ed066225de9e35344fba4",
+    "curated_sha256": "a3d43bea6543391fa818142f87521a320dfed04e950ed066225de9e35344fba4",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\renode_case_results.csv",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\renode_case_results.csv",
+    "original_sha256": "62de3e9f7a8f77f301d678705930df2c3c7d0fa56a04de181bf05ee16f03f503",
+    "curated_sha256": "62de3e9f7a8f77f301d678705930df2c3c7d0fa56a04de181bf05ee16f03f503",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\native_tm_verification.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\native_tm_verification.json",
+    "original_sha256": "68ed36b0a1ccedf0a271982d6518345d1b07851e6b5006e178a335dd785f775e",
+    "curated_sha256": "68ed36b0a1ccedf0a271982d6518345d1b07851e6b5006e178a335dd785f775e",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\coupled_matrix_summary.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\coupled_matrix_summary.json",
+    "original_sha256": "36b9a71b078e5f21f5d18248ac106eaa01ced6d2fabb62190cb3ae20227954ed",
+    "curated_sha256": "36b9a71b078e5f21f5d18248ac106eaa01ced6d2fabb62190cb3ae20227954ed",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3_summary.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3_summary.json",
+    "original_sha256": "f5ff14c229779f2738d7e61fd1155d5239fe6e542d8be5d4ce17de58ae433933",
+    "curated_sha256": "f5ff14c229779f2738d7e61fd1155d5239fe6e542d8be5d4ce17de58ae433933",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\campaign_charter.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\campaign_charter.json",
+    "original_sha256": "9c703ee3e0605b3c2ad20ad863678d7ecd9108827b3a05a8ed8961790b0dcf53",
+    "curated_sha256": "9c703ee3e0605b3c2ad20ad863678d7ecd9108827b3a05a8ed8961790b0dcf53",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\FROZEN-CAMPAIGN.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\FROZEN-CAMPAIGN.json",
+    "original_sha256": "f5e4bce0fe15fc7471ae49bc5ff033be55e34e8b1798e3ded0e9ad4e90f1694f",
+    "curated_sha256": "f5e4bce0fe15fc7471ae49bc5ff033be55e34e8b1798e3ded0e9ad4e90f1694f",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\V3-FROZEN-SPEC.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\V3-FROZEN-SPEC.json",
+    "original_sha256": "89c807659458290dac96d45e13defa70b23fbbdf45afc5a9fd9c20bab09c55b3",
+    "curated_sha256": "89c807659458290dac96d45e13defa70b23fbbdf45afc5a9fd9c20bab09c55b3",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n1_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n1_fb1000_s67.json",
+    "original_sha256": "2065d2eeeb39bf71ba860b2f466634a5229e6d11372f21b78b9c8dd6872cceae",
+    "curated_sha256": "2065d2eeeb39bf71ba860b2f466634a5229e6d11372f21b78b9c8dd6872cceae",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n1_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n1_fb1000_s67.jsonl",
+    "original_sha256": "5eac9fa5bff0f0320b2a793a22cda860e1e6ccdeb78541e1e499b4876ce5dd73",
+    "curated_sha256": "5eac9fa5bff0f0320b2a793a22cda860e1e6ccdeb78541e1e499b4876ce5dd73",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n1_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n1_fb100_s67.json",
+    "original_sha256": "1763cd1a42653e282f02f5efd47c80aff094fb4131a86f63fe117b22c3821115",
+    "curated_sha256": "1763cd1a42653e282f02f5efd47c80aff094fb4131a86f63fe117b22c3821115",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n1_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n1_fb100_s67.jsonl",
+    "original_sha256": "26ced959c924e9f3e0972538f8aa18946437d08ad4910ee84c33e77e9356d2f6",
+    "curated_sha256": "26ced959c924e9f3e0972538f8aa18946437d08ad4910ee84c33e77e9356d2f6",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n2_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n2_fb1000_s67.json",
+    "original_sha256": "d1edf6fe84bb75d5df2cda691e743b06cb51bb320eaf07b2976fc8d9fd15dcfd",
+    "curated_sha256": "d1edf6fe84bb75d5df2cda691e743b06cb51bb320eaf07b2976fc8d9fd15dcfd",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n2_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n2_fb1000_s67.jsonl",
+    "original_sha256": "7b09a2fa673e047c509d185e47619934408e2be77a7a34e403ae0db7a2289022",
+    "curated_sha256": "7b09a2fa673e047c509d185e47619934408e2be77a7a34e403ae0db7a2289022",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n2_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n2_fb100_s67.json",
+    "original_sha256": "d15009f64c747469bfa63a73f0257aa4fffac04e41cc3ae6f3760a5512d17194",
+    "curated_sha256": "d15009f64c747469bfa63a73f0257aa4fffac04e41cc3ae6f3760a5512d17194",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n2_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n2_fb100_s67.jsonl",
+    "original_sha256": "8763ae2472151d869a3569093a09e69e9f12417f785378ecff61b485511347af",
+    "curated_sha256": "8763ae2472151d869a3569093a09e69e9f12417f785378ecff61b485511347af",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n4_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n4_fb1000_s67.json",
+    "original_sha256": "3d4919681d6ef6a3b6e4c90698e163e433eac886269cb523cf71e89631252c12",
+    "curated_sha256": "3d4919681d6ef6a3b6e4c90698e163e433eac886269cb523cf71e89631252c12",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n4_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n4_fb1000_s67.jsonl",
+    "original_sha256": "392295369f1fe8ad5645b8973202c1740fda3dfb05431a3daa42f947384ffa2d",
+    "curated_sha256": "392295369f1fe8ad5645b8973202c1740fda3dfb05431a3daa42f947384ffa2d",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n4_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n4_fb100_s67.json",
+    "original_sha256": "239e639bf7dafd537e2886c579f771140b08922799d0c92cddecf7dd04e5c025",
+    "curated_sha256": "239e639bf7dafd537e2886c579f771140b08922799d0c92cddecf7dd04e5c025",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n4_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n4_fb100_s67.jsonl",
+    "original_sha256": "284fe6e479f186b93d495f1c8d6be485157851a2e41cffe4382e5c0cf43cf537",
+    "curated_sha256": "284fe6e479f186b93d495f1c8d6be485157851a2e41cffe4382e5c0cf43cf537",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n8_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n8_fb1000_s67.json",
+    "original_sha256": "c7744bcf8af6ea2bbbb923cc057674e079a13878474366e9e4fa8b3a43e9feb8",
+    "curated_sha256": "c7744bcf8af6ea2bbbb923cc057674e079a13878474366e9e4fa8b3a43e9feb8",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n8_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n8_fb1000_s67.jsonl",
+    "original_sha256": "073fd3a319663a1264690092579e7c0c16fc3ccfbc89f95632fe6212beacda1b",
+    "curated_sha256": "073fd3a319663a1264690092579e7c0c16fc3ccfbc89f95632fe6212beacda1b",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n8_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n8_fb100_s67.json",
+    "original_sha256": "f112a521779ff74aa9d9a6f451697f1f09410aea96d62777f860c937e18a0d89",
+    "curated_sha256": "f112a521779ff74aa9d9a6f451697f1f09410aea96d62777f860c937e18a0d89",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r256000_n8_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r256000_n8_fb100_s67.jsonl",
+    "original_sha256": "b9389b91f9891fac820e87bd93a987fca22a25cd9c83a63e555605d9ebe36ba1",
+    "curated_sha256": "b9389b91f9891fac820e87bd93a987fca22a25cd9c83a63e555605d9ebe36ba1",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n1_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n1_fb1000_s67.json",
+    "original_sha256": "891372e0ae7b40742b330582213a1e3f5a54be1769df4fd17316374038672117",
+    "curated_sha256": "891372e0ae7b40742b330582213a1e3f5a54be1769df4fd17316374038672117",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n1_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n1_fb1000_s67.jsonl",
+    "original_sha256": "2ad0a2949997a09a7f0048a2acda7dbc77f27e7149433d99a5579daf1fc96403",
+    "curated_sha256": "2ad0a2949997a09a7f0048a2acda7dbc77f27e7149433d99a5579daf1fc96403",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n1_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n1_fb100_s67.json",
+    "original_sha256": "b64e5bf24c80f02e6699bf08e9a4f8ef1c2b3d2e672c938d1b8d1c796b597c3c",
+    "curated_sha256": "b64e5bf24c80f02e6699bf08e9a4f8ef1c2b3d2e672c938d1b8d1c796b597c3c",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n1_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n1_fb100_s67.jsonl",
+    "original_sha256": "5b4a7154f560bf3d403d1c2db542a44112ded51c002fd16b5d43dbece2914736",
+    "curated_sha256": "5b4a7154f560bf3d403d1c2db542a44112ded51c002fd16b5d43dbece2914736",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n2_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n2_fb1000_s67.json",
+    "original_sha256": "9d1f201c0d9c1c23a813148403a261327aaa459ddb28f51e3d6f59598a2dac11",
+    "curated_sha256": "9d1f201c0d9c1c23a813148403a261327aaa459ddb28f51e3d6f59598a2dac11",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n2_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n2_fb1000_s67.jsonl",
+    "original_sha256": "3891f65286ce227005e701f538f7f56a5a13e6b020c84e3979ef465b7c328e61",
+    "curated_sha256": "3891f65286ce227005e701f538f7f56a5a13e6b020c84e3979ef465b7c328e61",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n2_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n2_fb100_s67.json",
+    "original_sha256": "5883ef1e02dabad8ecae87d23deec8e9b2666b8f22ab218f04b07342cfc8a86b",
+    "curated_sha256": "5883ef1e02dabad8ecae87d23deec8e9b2666b8f22ab218f04b07342cfc8a86b",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n2_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n2_fb100_s67.jsonl",
+    "original_sha256": "c90682529612c6d1efb3e0fbbb70fcc24d19d8c69df69cfca74701755d65d924",
+    "curated_sha256": "c90682529612c6d1efb3e0fbbb70fcc24d19d8c69df69cfca74701755d65d924",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n4_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n4_fb1000_s67.json",
+    "original_sha256": "c7ffbd8ed68f019ab9256a4a7fb4a6b590ccf23ea39da1fc14ed909f0e330e54",
+    "curated_sha256": "c7ffbd8ed68f019ab9256a4a7fb4a6b590ccf23ea39da1fc14ed909f0e330e54",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n4_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n4_fb1000_s67.jsonl",
+    "original_sha256": "5e4bb9c763ebe26ce4046296a20d66d414b0da3c1a0254ed8d8937c4747661df",
+    "curated_sha256": "5e4bb9c763ebe26ce4046296a20d66d414b0da3c1a0254ed8d8937c4747661df",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n4_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n4_fb100_s67.json",
+    "original_sha256": "64f70481b046d76a29bc9ee5652a61b77dca0e458df2b3114741c675e0bd2dda",
+    "curated_sha256": "64f70481b046d76a29bc9ee5652a61b77dca0e458df2b3114741c675e0bd2dda",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n4_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n4_fb100_s67.jsonl",
+    "original_sha256": "0fc735d99cad4ffd82cbaae52294516407631e89d4973c33ee7adbb35bc5f075",
+    "curated_sha256": "0fc735d99cad4ffd82cbaae52294516407631e89d4973c33ee7adbb35bc5f075",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n8_fb1000_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n8_fb1000_s67.json",
+    "original_sha256": "838bbc59ca3090848a689590ff9520af28ac63ea16ab2e201e72822d0da9dca2",
+    "curated_sha256": "838bbc59ca3090848a689590ff9520af28ac63ea16ab2e201e72822d0da9dca2",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n8_fb1000_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n8_fb1000_s67.jsonl",
+    "original_sha256": "853c6517867b6249ad4f587f1c0d50d51457610780ab2598a0895490c7cffb5a",
+    "curated_sha256": "853c6517867b6249ad4f587f1c0d50d51457610780ab2598a0895490c7cffb5a",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n8_fb100_s67.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n8_fb100_s67.json",
+    "original_sha256": "6742cfa7d56635994a9d9fa795338365fcc573c20b514504f3fe2d0b7ce47c19",
+    "curated_sha256": "6742cfa7d56635994a9d9fa795338365fcc573c20b514504f3fe2d0b7ce47c19",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\cases\\r4000_n8_fb100_s67.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\cases\\r4000_n8_fb100_s67.jsonl",
+    "original_sha256": "c651a8a6f21e8bdedb7bd5905c73a5d0533d7ae8ab283fe1fb0c6dcf3b71c6fb",
+    "curated_sha256": "c651a8a6f21e8bdedb7bd5905c73a5d0533d7ae8ab283fe1fb0c6dcf3b71c6fb",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_loss_r256000_n1_fb100_s89_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_loss_r256000_n1_fb100_s89_m100.json",
+    "original_sha256": "fcb8256b83936d00cad5e224daf7ad5918866e75f76a7af08aa35bc973dfbbe3",
+    "curated_sha256": "fcb8256b83936d00cad5e224daf7ad5918866e75f76a7af08aa35bc973dfbbe3",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_loss_r256000_n1_fb100_s89_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_loss_r256000_n1_fb100_s89_m100.jsonl",
+    "original_sha256": "6d1662da10121222e705e0a86172b1b5a9b5335144f8f0763d1e2ff2f6a3bcb3",
+    "curated_sha256": "6d1662da10121222e705e0a86172b1b5a9b5335144f8f0763d1e2ff2f6a3bcb3",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s81_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s81_m100.json",
+    "original_sha256": "6642bec3b4a333f052d4d7325ea581dcd5741290a8dd6a2edb866397886d6b21",
+    "curated_sha256": "6642bec3b4a333f052d4d7325ea581dcd5741290a8dd6a2edb866397886d6b21",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s81_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s81_m100.jsonl",
+    "original_sha256": "081db614480c026946fe31ef096bcf7c6cf3e97d7eb1176614aea86b771bff1b",
+    "curated_sha256": "081db614480c026946fe31ef096bcf7c6cf3e97d7eb1176614aea86b771bff1b",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m100.json",
+    "original_sha256": "8370660b3dd990bd186e1d9b9019dcf27c22d53679d073ae0ae665b5153c8b50",
+    "curated_sha256": "8370660b3dd990bd186e1d9b9019dcf27c22d53679d073ae0ae665b5153c8b50",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m100.jsonl",
+    "original_sha256": "ddaad2abe456127449aaab54d0f8045880225594fbea56e2aa35a4de2df2f214",
+    "curated_sha256": "ddaad2abe456127449aaab54d0f8045880225594fbea56e2aa35a4de2df2f214",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m50.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m50.json",
+    "original_sha256": "3f427bf8bcb12ff974aeb9cb61d16077669e50c9ddfd4554d51e16d9476f64d4",
+    "curated_sha256": "3f427bf8bcb12ff974aeb9cb61d16077669e50c9ddfd4554d51e16d9476f64d4",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m50.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb1000_s83_m50.jsonl",
+    "original_sha256": "4fcfa70d0e8f59d24fc6589c41fb2517507cee1c2ef81735cbe5d932e1054cad",
+    "curated_sha256": "4fcfa70d0e8f59d24fc6589c41fb2517507cee1c2ef81735cbe5d932e1054cad",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m100.json",
+    "original_sha256": "7ec7c932bf9fad03527157abd61e233e7b7780fef7f815e8848b13152a2bd1c8",
+    "curated_sha256": "7ec7c932bf9fad03527157abd61e233e7b7780fef7f815e8848b13152a2bd1c8",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m100.jsonl",
+    "original_sha256": "2b88b3fd68a7ca8300166229bd322af85271df38c7106b8e2635560b67b1c93c",
+    "curated_sha256": "2b88b3fd68a7ca8300166229bd322af85271df38c7106b8e2635560b67b1c93c",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m50.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m50.json",
+    "original_sha256": "1c5839bb81e1b0d1834e9c7d165ca1757397e8b6d2dae81ec141680f945fe0d3",
+    "curated_sha256": "1c5839bb81e1b0d1834e9c7d165ca1757397e8b6d2dae81ec141680f945fe0d3",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m50.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n1_fb100_s83_m50.jsonl",
+    "original_sha256": "97da6f18ba16678347e277ce1534b48d88ee7438685c45bc8c7a97020d3fdcea",
+    "curated_sha256": "97da6f18ba16678347e277ce1534b48d88ee7438685c45bc8c7a97020d3fdcea",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n2_fb1000_s81_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n2_fb1000_s81_m100.json",
+    "original_sha256": "2c2127a7f12163d488d19c78ffe340802cb2d9c1205955d73169e22a503bd75d",
+    "curated_sha256": "2c2127a7f12163d488d19c78ffe340802cb2d9c1205955d73169e22a503bd75d",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n2_fb1000_s81_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n2_fb1000_s81_m100.jsonl",
+    "original_sha256": "1eda7b992edcea08375be96af8ae1f94dec31ac0386e5a07260e2e40d34b7987",
+    "curated_sha256": "1eda7b992edcea08375be96af8ae1f94dec31ac0386e5a07260e2e40d34b7987",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n4_fb1000_s81_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n4_fb1000_s81_m100.json",
+    "original_sha256": "5f2b6ce43b474be8fc21a8cb41129c742840e686d32860bf6ae233e09e767cf3",
+    "curated_sha256": "5f2b6ce43b474be8fc21a8cb41129c742840e686d32860bf6ae233e09e767cf3",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n4_fb1000_s81_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n4_fb1000_s81_m100.jsonl",
+    "original_sha256": "6766a01c18cf6226c570d6b893facab669bb3a92432b4d31072ad29fd88af4ff",
+    "curated_sha256": "6766a01c18cf6226c570d6b893facab669bb3a92432b4d31072ad29fd88af4ff",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n8_fb1000_s81_m100.json",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n8_fb1000_s81_m100.json",
+    "original_sha256": "c4dbe2554aa174e91af308ca78d94e171252354f185de2b88f09adebb56e3b24",
+    "curated_sha256": "c4dbe2554aa174e91af308ca78d94e171252354f185de2b88f09adebb56e3b24",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\exploratory_fast_uart_v3\\v3_r256000_n8_fb1000_s81_m100.jsonl",
+    "destination": "ctc1-renode-validation\\evidence\\recorded\\exploratory_fast_uart_v3\\v3_r256000_n8_fb1000_s81_m100.jsonl",
+    "original_sha256": "6b4e02d2d44dfc6fb7ba4ce2dab4f4b32253c38399f1acdf92e2b6322348a3ef",
+    "curated_sha256": "6b4e02d2d44dfc6fb7ba4ce2dab4f4b32253c38399f1acdf92e2b6322348a3ef",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\CTC1-RENODE-STM32-RESULTS.md",
+    "destination": "ctc1-renode-validation\\docs\\original-results.md",
+    "original_sha256": "af63c89a9327725a477585eb5d298767060941045a315704f98ded31c4eb18da",
+    "curated_sha256": "af63c89a9327725a477585eb5d298767060941045a315704f98ded31c4eb18da",
+    "transformation": "exact bytes"
+  }
+]

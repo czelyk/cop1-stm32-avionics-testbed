@@ -1,0 +1,33 @@
+{
+  "command": [
+    "C:\\Users\\Ahmet\\AppData\\Local\\Programs\\ArmGNUToolchain\\bin\\arm-none-eabi-gcc.exe",
+    "-mcpu=cortex-m4",
+    "-mthumb",
+    "-std=c99",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-nostdlib",
+    "-Wl,--build-id=none",
+    "-Wl,-Map=C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\stm32_farm.map",
+    "-I",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\shim",
+    "-I",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\.deps\\nasa\\fsw\\public_inc",
+    "-T",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\stm32.ld",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\stm32_startup.c",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\stm32_firmware.c",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\pool_adapter.c",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\.deps\\nasa\\fsw\\src\\services\\cop1.c",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\.deps\\nasa\\fsw\\src\\formats\\tctf.c",
+    "-o",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\ctc1-renode-validation\\runs\\20261022T191438Z_renode_dde12d\\work\\stm32_farm.elf"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

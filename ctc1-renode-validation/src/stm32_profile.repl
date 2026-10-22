@@ -1,0 +1,9 @@
+using "platforms/boards/stm32f4_discovery.repl"
+
+// Restrict the generic family model to this declared bench memory profile.
+sram:
+    size: 0x20000
+flash:
+    size: 0x100000
+nvic:
+    systickFrequency: 72000000

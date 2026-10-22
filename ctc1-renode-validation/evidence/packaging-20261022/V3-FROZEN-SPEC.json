@@ -1,0 +1,99 @@
+{
+  "frozen_utc": "2026-10-22T19:17:51.191483+00:00",
+  "kind": "Fresh exploratory functional controls",
+  "reason": "Source audit found V1 USART default 8 MHz / BRR139 = 57553 baud; that stage limits high-rate pressure",
+  "changes": "Explicit UART BRR16 at quiescent boundaries; fresh seeds; two paired MIPS sensitivity cases; one frame-loss control",
+  "unchanged": "All frozen V1 firmware/source/class files, NASA protocol behavior, service code, source-only causal inputs",
+  "cases": [
+    {
+      "id": "v3_r256000_n1_fb1000_s81_m100",
+      "capacity": 1,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 81,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n2_fb1000_s81_m100",
+      "capacity": 2,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 81,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n4_fb1000_s81_m100",
+      "capacity": 4,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 81,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n8_fb1000_s81_m100",
+      "capacity": 8,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 81,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n1_fb100_s83_m100",
+      "capacity": 1,
+      "feedback_ms": 100,
+      "rate_bps": 256000,
+      "seed": 83,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n1_fb1000_s83_m100",
+      "capacity": 1,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 83,
+      "mips": 100,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n1_fb100_s83_m50",
+      "capacity": 1,
+      "feedback_ms": 100,
+      "rate_bps": 256000,
+      "seed": 83,
+      "mips": 50,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_r256000_n1_fb1000_s83_m50",
+      "capacity": 1,
+      "feedback_ms": 1000,
+      "rate_bps": 256000,
+      "seed": 83,
+      "mips": 50,
+      "uart_baud": 500000
+    },
+    {
+      "id": "v3_loss_r256000_n1_fb100_s89_m100",
+      "capacity": 1,
+      "feedback_ms": 100,
+      "rate_bps": 256000,
+      "seed": 89,
+      "mips": 100,
+      "uart_baud": 500000,
+      "drop_first": true,
+      "classification": "declared one-frame-loss functional control"
+    }
+  ],
+  "no_physical_or_model_prediction_claim": true,
+  "source_sha256": {
+    "renode_v3_controls.py": "b5a8ab292ef3b9e2d92835d76b9dc3ba3b5bf9d8173a7441a7bf302de2afb4dc",
+    "coupled_renode.py": "79583f4c859eca925a32abc898cd7a687b3712b92a8a4eadd3b188a752b93324",
+    "renode_driver.py": "392878a43c196fe0d91a1257c052744d63b8ab9571c24cfe691fe33ab0647ac5",
+    "stm32_farm.elf": "b208ea54a3391f4604ee6b8f0bc70535d6b6248fd81a5b995ee79ac9ccf30e5d"
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "target": ".deps/nasa/fsw/src/services/cop1.c",
+    "url": "https://raw.githubusercontent.com/nasa/CFS_IO_LIB/3f41191d0d361bed88b056f2a7d45301ac7b3fe5/fsw/src/services/cop1.c",
+    "sha256": "3f58bbc0385d97ec54362ffbb2229718f62eb43fb159950598ad1b7656c9dd10"
+  },
+  {
+    "target": ".deps/nasa/fsw/src/formats/tctf.c",
+    "url": "https://raw.githubusercontent.com/nasa/CFS_IO_LIB/3f41191d0d361bed88b056f2a7d45301ac7b3fe5/fsw/src/formats/tctf.c",
+    "sha256": "57f00ea4daba595f0d5a8af5fb4d3d8e95e6027b8c0628c82db84d3e80f695dc"
+  },
+  {
+    "target": ".deps/nasa/fsw/public_inc/cop1.h",
+    "url": "https://raw.githubusercontent.com/nasa/CFS_IO_LIB/3f41191d0d361bed88b056f2a7d45301ac7b3fe5/fsw/public_inc/cop1.h",
+    "sha256": "38226dc5cf9650bf59bbacea57e12816e1dc2220df08c6d9347716bff37729b4"
+  },
+  {
+    "target": ".deps/nasa/fsw/public_inc/tctf.h",
+    "url": "https://raw.githubusercontent.com/nasa/CFS_IO_LIB/3f41191d0d361bed88b056f2a7d45301ac7b3fe5/fsw/public_inc/tctf.h",
+    "sha256": "17e65b3cb38ec4d458f49f8a8afe88242ab7140537d37bc9fecd35bcdea9a652"
+  },
+  {
+    "target": ".deps/downloads/renode.zip",
+    "url": "https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.windows-portable.zip",
+    "sha256": "18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db",
+    "extract": ".deps/renode"
+  }
+]

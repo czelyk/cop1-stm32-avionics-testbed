@@ -1,0 +1,11 @@
+--- original/renode.config
++++ portable/renode.config
+@@ -7,7 +7,7 @@
+ collapse-repeated-log-entries = True
+ log-timestamps-type = Host
+ log-history-limit = 1000
+-history-path = C:\Users\Ahmet\AppData\Roaming\renode\history
++history-path = history.txt
+ store-table-bits = 41
+ [monitor]
+ consume-exceptions-from-command = True

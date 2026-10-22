@@ -1,0 +1,32 @@
+--- original/coupled_renode.py
++++ portable/coupled_renode.py
+@@ -7,9 +7,9 @@
+ from pathlib import Path
+ from datetime import datetime, timezone
+ from collections import Counter
+-import binascii, hashlib, heapq, json, math, queue, random, struct, subprocess, sys, threading
++import binascii, hashlib, heapq, json, math, queue, random, struct, subprocess, sys, threading, os
+ from renode_driver import Renode, ROOT, FLAGS
+-JAVA = Path('C:/Program Files/Android/Android Studio/jbr/bin/java.exe')
++JAVA = Path(os.environ['JAVA'])
+ 
+ def save(path, data):
+     path.parent.mkdir(exist_ok=True, parents=True)
+@@ -19,7 +19,7 @@
+ class Fop:
+     def __init__(self, prefix):
+         self.stderr = (ROOT / (prefix + '_fop_stderr.log')).open('x', encoding='utf-8')
+-        self.proc = subprocess.Popen([str(JAVA), '-cp', str(ROOT / 'compiled_v2') + ';' + str(ROOT / 'dependencies.jar'),
++        self.proc = subprocess.Popen([str(JAVA), '-cp', str(ROOT / 'compiled_v2') + os.pathsep + os.environ['YAMCS_CLASSPATH'],
+                                       'org.yamcs.tctm.ccsds.VirtualPeerV2'], stdin=subprocess.PIPE,
+                                      stdout=subprocess.PIPE, stderr=self.stderr, text=True,
+                                      creationflags=FLAGS)
+@@ -186,7 +186,7 @@
+          'no_artificial_service_delays': True, 'no_background_work_or_RTOS_claim': True,
+          'selection': 'No mission resource selection from these functional runs; earlier paper decision remains conditional'})
+     paths = [ROOT / name for name in ['stm32_firmware.c', 'stm32_startup.c', 'pool_adapter.c', 'stm32.ld', 'stm32_farm.elf',
+-             'stm32_profile.repl', 'renode_driver.py', 'coupled_renode.py', 'campaign_charter.json', 'VirtualPeerV2.java', 'dependencies.jar']]
++             'stm32_profile.repl', 'renode_driver.py', 'coupled_renode.py', 'campaign_charter.json', 'VirtualPeerV2.java']]
+     paths += list((ROOT / 'compiled_v2').rglob('*.class'))
+     save(ROOT / 'FROZEN-CAMPAIGN.json', {'frozen_utc': datetime.now(timezone.utc).isoformat(),
+          'scope': 'Renode functional campaign, not a model prediction/physical validation split',
