@@ -1,0 +1,15 @@
+{
+  "kind": "Independent pinned native Yamcs decoder/CRC/OCF check",
+  "frames_checked": 425,
+  "all_exact_ocf_crc_data_layout": true,
+  "corrupt_fecf_control_rejected": true,
+  "command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+    "-cp",
+    "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\tm_check_classes;C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\ctc1_renode_stm32_20261014\\dependencies.jar",
+    "org.yamcs.tctm.ccsds.TMVerifier"
+  ],
+  "stderr": "",
+  "checker_source_sha256": "a2ef1845cd06672c34a2415159c35a3f578067c49980086bbd8626cca55f7134",
+  "physical_measurements": false
+}

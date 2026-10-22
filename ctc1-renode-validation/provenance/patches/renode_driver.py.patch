@@ -1,0 +1,12 @@
+--- original/renode_driver.py
++++ portable/renode_driver.py
+@@ -1,7 +1,7 @@
+ from pathlib import Path
+-import binascii, json, re, socket, struct, subprocess, time
++import binascii, json, re, socket, struct, subprocess, time, os
+ ROOT = Path(__file__).resolve().parent
+-RUNTIME = ROOT / 'runtime/renode_1.17.0-portable'
++RUNTIME = Path(os.environ['RENODE_HOME'])
+ FLAGS = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, 'CREATE_NO_WINDOW') else 0
+ 
+ class Renode:

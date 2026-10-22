@@ -1,0 +1,35 @@
+{
+  "kind": "Renode STM32F4 UART/NVIC firmware controls; no physical timing claim",
+  "cases": [
+    {
+      "capacity": 1,
+      "exact_unique_executions": 2,
+      "wait_release_retry_duplicate_wrap_invalid_length_guards": "passed",
+      "uart_rx_interrupts_cumulative": 414,
+      "systick_ms": 86
+    },
+    {
+      "capacity": 2,
+      "exact_unique_executions": 3,
+      "wait_release_retry_duplicate_wrap_invalid_length_guards": "passed",
+      "uart_rx_interrupts_cumulative": 913,
+      "systick_ms": 179
+    },
+    {
+      "capacity": 4,
+      "exact_unique_executions": 5,
+      "wait_release_retry_duplicate_wrap_invalid_length_guards": "passed",
+      "uart_rx_interrupts_cumulative": 1582,
+      "systick_ms": 304
+    },
+    {
+      "capacity": 8,
+      "exact_unique_executions": 9,
+      "wait_release_retry_duplicate_wrap_invalid_length_guards": "passed",
+      "uart_rx_interrupts_cumulative": 2591,
+      "systick_ms": 493
+    }
+  ],
+  "total_exact_unique_executions": 19,
+  "physical_measurements": false
+}

@@ -1,0 +1,11 @@
+{
+  "completed_utc": "2026-10-22T19:18:33.440563+00:00",
+  "kind": "Exploratory Renode functionality and MIPS sensitivity",
+  "cases": 9,
+  "exact_source_commands": 216,
+  "exact_executions": 216,
+  "exact_sink_commands": 216,
+  "uart_baud_verified": 500000,
+  "no_physical_measurements": true,
+  "limitations": "ORE permanently false, TXE permanently true; host output collection and modeled return delay remain explicit"
+}

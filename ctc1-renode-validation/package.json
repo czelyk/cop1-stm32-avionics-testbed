@@ -1,0 +1,5 @@
+{
+  "name": "ctc1-renode-validation",
+  "title": "CTC1 STM32/Renode Validation",
+  "scope": "Bare-metal functional peripheral emulation; no physical timing"
+}

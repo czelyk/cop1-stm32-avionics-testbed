@@ -1,0 +1,15 @@
+--- original/run.py
++++ portable/run.py
+@@ -62,10 +62,10 @@
+               fresh_exact_executions=19, **recorded)
+ if args.campaign:
+     env['JAVA'] = str(find_tool('java', 'JAVA'))
+-    execute([sys.executable, ROOT / 'tools/prepare_yamcs.py'], ROOT, 'yamcs-prepare.log', env, timeout=1800)
++    execute([sys.executable, ROOT / 'tools/prepare_yamcs.py'], ROOT, run / 'yamcs-prepare.log', env, timeout=1800)
+     cp = json.loads((deps / 'yamcs-classpath.json').read_text())
+     env['YAMCS_CLASSPATH'] = str(deps / 'yamcs-dependencies.jar')
+-    execute([sys.executable, ROOT / 'tools/compile_peer.py', str(work)], ROOT, 'peer-build.log', env)
++    execute([sys.executable, ROOT / 'tools/compile_peer.py', str(work)], ROOT, run / 'peer-build.log', env)
+     execute([sys.executable, work / 'coupled_renode.py', 'freeze'], work, 'freeze.log', env)
+     execute([sys.executable, work / 'coupled_renode.py', 'matrix'], work, 'matrix.log', env, timeout=1200)
+     execute([sys.executable, work / 'renode_v3_controls.py'], work, 'v3.log', env, timeout=1200)

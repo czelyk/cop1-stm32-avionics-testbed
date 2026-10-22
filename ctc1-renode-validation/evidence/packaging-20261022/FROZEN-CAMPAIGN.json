@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-10-22T19:14:58.549860+00:00",
+  "scope": "Renode functional campaign, not a model prediction/physical validation split",
+  "sha256": {
+    "stm32_firmware.c": "63d58d43101aa57eca94217ce325d507358d8a3ec0158b235838764bec0855a4",
+    "stm32_startup.c": "dba7e579e84a183100fb4e5d7ccaaf58e9245e6b94ff51fb4dda9b2a3767daee",
+    "pool_adapter.c": "7db34db1829c1d331441933e4ea19005b284953c81199e24d7e2f8a84e962f8b",
+    "stm32.ld": "b70ff94b6bc570639da1fffe4b17650aafd367afc0018419647175088c23f844",
+    "stm32_farm.elf": "b208ea54a3391f4604ee6b8f0bc70535d6b6248fd81a5b995ee79ac9ccf30e5d",
+    "stm32_profile.repl": "6962bc39c68c6e3a9f26d100795fdebfd818c081559e94fc8ecb40c912aada91",
+    "renode_driver.py": "392878a43c196fe0d91a1257c052744d63b8ab9571c24cfe691fe33ab0647ac5",
+    "coupled_renode.py": "79583f4c859eca925a32abc898cd7a687b3712b92a8a4eadd3b188a752b93324",
+    "campaign_charter.json": "9c703ee3e0605b3c2ad20ad863678d7ecd9108827b3a05a8ed8961790b0dcf53",
+    "VirtualPeerV2.java": "7b3a39e5a24f52c220e75e9198a77081183beb65254dbdb9c9b3b622058c3ffb",
+    "compiled_v2\\org\\yamcs\\tctm\\ccsds\\VirtualPeerV2$Monitor.class": "3c1618fe23aee22856fcd309d5196b6de7e6f0aec87b7c0e8a78bae1b3ed35da",
+    "compiled_v2\\org\\yamcs\\tctm\\ccsds\\VirtualPeerV2$VirtualExecutor$Task.class": "002fd2aa815be91ff1c4c23310009ac6669098efe85fb5451b896e33659ab80d",
+    "compiled_v2\\org\\yamcs\\tctm\\ccsds\\VirtualPeerV2$VirtualExecutor.class": "3cabc92a14c119549a1ce44b11b4fec665d2007da1c497cf3a9f5ebaf4ad35d4",
+    "compiled_v2\\org\\yamcs\\tctm\\ccsds\\VirtualPeerV2.class": "671f11a7dd995957ccb19568362b73d7204518ba7c2ef65bfdf0b6eda05bf91c"
+  }
+}

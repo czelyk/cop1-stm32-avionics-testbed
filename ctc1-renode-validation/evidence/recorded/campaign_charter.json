@@ -1,0 +1,172 @@
+{
+  "kind": "Functional Renode campaign; no calibrated prediction claims",
+  "cases": [
+    {
+      "id": "r4000_n1_fb100_s67",
+      "rate_bps": 4000,
+      "capacity": 1,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n1_fb1000_s67",
+      "rate_bps": 4000,
+      "capacity": 1,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n2_fb100_s67",
+      "rate_bps": 4000,
+      "capacity": 2,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n2_fb1000_s67",
+      "rate_bps": 4000,
+      "capacity": 2,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n4_fb100_s67",
+      "rate_bps": 4000,
+      "capacity": 4,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n4_fb1000_s67",
+      "rate_bps": 4000,
+      "capacity": 4,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n8_fb100_s67",
+      "rate_bps": 4000,
+      "capacity": 8,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r4000_n8_fb1000_s67",
+      "rate_bps": 4000,
+      "capacity": 8,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n1_fb100_s67",
+      "rate_bps": 256000,
+      "capacity": 1,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n1_fb1000_s67",
+      "rate_bps": 256000,
+      "capacity": 1,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n2_fb100_s67",
+      "rate_bps": 256000,
+      "capacity": 2,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n2_fb1000_s67",
+      "rate_bps": 256000,
+      "capacity": 2,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n4_fb100_s67",
+      "rate_bps": 256000,
+      "capacity": 4,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n4_fb1000_s67",
+      "rate_bps": 256000,
+      "capacity": 4,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n8_fb100_s67",
+      "rate_bps": 256000,
+      "capacity": 8,
+      "feedback_ms": 100,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    },
+    {
+      "id": "r256000_n8_fb1000_s67",
+      "rate_bps": 256000,
+      "capacity": 8,
+      "feedback_ms": 1000,
+      "seed": 67,
+      "initial_sequence": 255,
+      "mips": 100,
+      "classification": "functional reference assumptions, not measured spacecraft workload"
+    }
+  ],
+  "arrival": "Complete framed UART requests are batched after externally modeled decoded-frame serialization",
+  "return": "Firmware TM bytes, collection quantization at most 5 ms plus externally modeled 1 Mbit/s serialization",
+  "success": "24 exact unique commits and replies per case, no fatal FOP alert, no guard/ring/parser/reply overflow",
+  "service_cost": "Compiled instructions under explicit 100 MIPS, SysTick clock 72 MHz; not STM32 hardware cycles",
+  "no_artificial_service_delays": true,
+  "no_background_work_or_RTOS_claim": true,
+  "selection": "No mission resource selection from these functional runs; earlier paper decision remains conditional"
+}
