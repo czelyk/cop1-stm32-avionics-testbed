@@ -1,0 +1,120 @@
+{
+  "mode": "renode-timing",
+  "board_capture": false,
+  "elf_sha256": "b86f5a550dfd0f1586a653337965c4804a927007b2b41fc825372b5e5cf05e5b",
+  "configured_core_hz": 72000000,
+  "cases": [
+    {
+      "capacity": 1,
+      "exact_commands": 1,
+      "exact_tm_frames": 1,
+      "counter_available": false,
+      "configured_core_hz": 72000000,
+      "uart_overruns": 0,
+      "uart_errors": 0,
+      "rx_ring_peak_since_boot": 1,
+      "phases": {
+        "farm_step": {
+          "calls": 1,
+          "max_cycles": null
+        },
+        "commit_step": {
+          "calls": 1,
+          "max_cycles": null
+        },
+        "tm_build_and_write": {
+          "calls": 1,
+          "max_cycles": null
+        }
+      },
+      "ring_drops": 0,
+      "protocol_errors": 0,
+      "reply_errors": 0,
+      "pool_peak": 1
+    },
+    {
+      "capacity": 2,
+      "exact_commands": 2,
+      "exact_tm_frames": 1,
+      "counter_available": false,
+      "configured_core_hz": 72000000,
+      "uart_overruns": 0,
+      "uart_errors": 0,
+      "rx_ring_peak_since_boot": 1,
+      "phases": {
+        "farm_step": {
+          "calls": 2,
+          "max_cycles": null
+        },
+        "commit_step": {
+          "calls": 2,
+          "max_cycles": null
+        },
+        "tm_build_and_write": {
+          "calls": 1,
+          "max_cycles": null
+        }
+      },
+      "ring_drops": 0,
+      "protocol_errors": 0,
+      "reply_errors": 0,
+      "pool_peak": 2
+    },
+    {
+      "capacity": 4,
+      "exact_commands": 4,
+      "exact_tm_frames": 1,
+      "counter_available": false,
+      "configured_core_hz": 72000000,
+      "uart_overruns": 0,
+      "uart_errors": 0,
+      "rx_ring_peak_since_boot": 1,
+      "phases": {
+        "farm_step": {
+          "calls": 4,
+          "max_cycles": null
+        },
+        "commit_step": {
+          "calls": 4,
+          "max_cycles": null
+        },
+        "tm_build_and_write": {
+          "calls": 1,
+          "max_cycles": null
+        }
+      },
+      "ring_drops": 0,
+      "protocol_errors": 0,
+      "reply_errors": 0,
+      "pool_peak": 4
+    },
+    {
+      "capacity": 8,
+      "exact_commands": 8,
+      "exact_tm_frames": 2,
+      "counter_available": false,
+      "configured_core_hz": 72000000,
+      "uart_overruns": 0,
+      "uart_errors": 0,
+      "rx_ring_peak_since_boot": 1,
+      "phases": {
+        "farm_step": {
+          "calls": 8,
+          "max_cycles": null
+        },
+        "commit_step": {
+          "calls": 8,
+          "max_cycles": null
+        },
+        "tm_build_and_write": {
+          "calls": 2,
+          "max_cycles": null
+        }
+      },
+      "ring_drops": 0,
+      "protocol_errors": 0,
+      "reply_errors": 0,
+      "pool_peak": 8
+    }
+  ]
+}

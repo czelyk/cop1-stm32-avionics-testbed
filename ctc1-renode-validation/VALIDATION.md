@@ -1,5 +1,10 @@
 # Packaging validation — 22 October 2026
 
+The 10 November timing follow-up verified four paced Renode controls,
+15 exact commands and five TM frames. It also built the separate 16 MHz
+board image. The Renode cycle fields are null and no hardware capture was
+taken. See the [timing probe](docs/TIMING-PROBE.md) for the fresh scope.
+
 **Executed successfully in the curated working copy:** 4 ownership controls / 19 exact executions, then 25 coupled cases / 600 exact commands and responses.
 
 Renode functional emulation; no physical UART or MCU timing. Fresh firmware and Java adapter were rebuilt. Pinned Yamcs classes/JARs came from a copied public dependency cache; the from-empty Maven bootstrap was not executed in this packaging run.

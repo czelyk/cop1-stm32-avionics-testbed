@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "cop1-stm32-avionics-testbed",
+			"path": "."
+		},
+		{
+			"name": "ctc1-renode-validation",
+			"path": "../../Documents/Codex/2026-10-13/iac-2027-konu-arastirmasi/automation/iterative_20261018/github_ready_20261022/all-six-repositories/ctc1-renode-validation"
+		}
+	],
+	"settings": {}
+}

@@ -17,6 +17,12 @@ python tests/run.py --campaign
 rerunning the experiment. New runs go to ignored `runs/` directories (or
 `outputs/` in the F Prime lab). Archived evidence is never used as an output target.
 
+## Timing probe
+
+The optional [STM32F407 timing probe](docs/TIMING-PROBE.md) builds a
+16 MHz board image and checks its diagnostic format using a separate
+Renode profile. It reports FARM, command commit and TM phases separately.
+
 ## Contents
 
 - `src/`: C firmware, linker/profile files, Renode driver, Java peer and fresh campaign scripts.

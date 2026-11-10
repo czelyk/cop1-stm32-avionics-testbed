@@ -19,7 +19,7 @@ STM32F4 Cortex-M firmware --> NASA COP-1 FARM (pinned upstream dependency)
 Command handler --> response records / TM frames --> ground verifier
 ```
 
-The material available in the attached source archive includes **standalone ARM FARM test glue** and **Yamcs verification adapters**. A separate, later Renode campaign was reported, but its firmware and test files were **not present in the archive used to assemble this download**. Add and check those actual files from your local research directory before publishing claims that this repository reproduces the Renode runs.
+The top-level archive contains the earlier standalone ARM FARM test glue and Yamcs adapters. The later STM32 firmware, Renode drivers and recorded campaign are in [ctc1-renode-validation](ctc1-renode-validation/README.md). The [timing probe](ctc1-renode-validation/docs/TIMING-PROBE.md) builds a separate STM32F407 measurement image and includes a paced UART capture tool.
 
 ## Repository layout
 
@@ -38,7 +38,7 @@ The material available in the attached source archive includes **standalone ARM 
 
 The uploaded earlier research archive records **64 software-only reference runs with 1,536 exact command outputs**. Those runs used assigned virtual service durations, not physical MCU timing. The selected source files and aggregate summary are in this package.
 
-A separate later **Renode STM32F4** campaign was reported by the developer: **25 cases, 600/600 unique command/response records and 425 independently decoded TM frames**. This package **does not contain the later Renode firmware or raw logs**, so those reported numbers are not claimed as independently reproducible from this ZIP. After importing that source and validating it, document the results under `docs/renode-validation.md` with precise scope.
+The later [Renode STM32F4 package](ctc1-renode-validation/VALIDATION.md) contains firmware, drivers and evidence for **25 cases, 600 exact command records and 425 TM frames**. The timing probe is a separate paced control and records no silicon measurements.
 
 ## Build and reproduction status
 

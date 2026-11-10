@@ -1,0 +1,6 @@
+{
+  "mode": "board-timing",
+  "board_capture": false,
+  "elf_sha256": "eef0acf8e8c3cf8d5df34f30e14c76390aede9856d35b81128ffa26c0dce5601",
+  "configured_core_hz": 16000000
+}
