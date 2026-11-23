@@ -73,7 +73,7 @@ STM32F407 to the nominal 16 MHz profile. Connect a 3.3 V UART adapter to USART2
 with crossed TX/RX and common ground. On the Discovery board, confirm the
 board revision and pin assignments in the ST manual. In the documented
 P1 mapping PA2 (TX) is pin 14, PA3 (RX) is pin 13 and PD12 is pin 44.
-Capture PD12 and the target TX line using a common logic-analyzer clock.
+Capture PD12 and both target UART lines (RX and TX) using one logic-analyzer clock.
 [STM32F407 Discovery manual, Table 7](https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf)
 
 ```powershell
@@ -93,13 +93,16 @@ the affected comparison.
 
 Start the capture after reset traffic has finished, while PD12 is low and
 before starting the Python board runner. Stop after the runner finishes.
-Export PD12 transitions and decoded target TX bytes on the **same analyzer
-timebase**. Normalize both exports to one chronological CSV with header
+Export PD12 transitions and decoded target RX and TX bytes on the **same
+analyzer timebase**. Normalize both exports to one chronological CSV with header
 `time_s,signal,value`. The first row gives the initial low PD12 level.
-For `pd12` rows use `0` or `1`. For `tx` rows use one two-digit hexadecimal
-byte and timestamp its start bit. Keep all UART records between the start
-and end of the invocation. Capture TX in the same direction as seen by the
-host.
+For `pd12` rows use `0` or `1`. For `rx` and `tx` rows use one two-digit
+hexadecimal byte. Directions are from the board's perspective. Timestamp
+each `tx` byte at its start bit and each `rx` byte at the center of its stop
+bit. For an 8N1 export containing only RX start times, calculate the stop-bit
+center by adding 9.5 measured bit periods on the same analyzer timebase.
+Preserve the original export. Keep all complete UART requests and replies
+between the start and end of the invocation.
 
 Run the following with the actual logic-analyzer sample period in microseconds.
 The paths below stand for the two files from **one** board run and its
@@ -111,21 +114,26 @@ python tests/analyze_holding_capture.py holding.json board_uart.jsonl capture.cs
 
 The analyzer matches the entire decoded TX stream byte for byte against the
 hash-bound UART log, validates record CRCs and pairs each of the 34 complete
-PD12 pulses with its expected command commit. It excludes one manual control
-per execution order. It reports 16 paired differences, grouped by order, plus
+PD12 pulses with its expected command commit. For each automatic admission,
+it checks the RX request CRC and matches the request sequence, exact TC
+frame and response order. A PD12 edge that precedes the last RX byte beyond
+the supplied sample resolution rejects the capture. It excludes one manual
+control per execution order. It reports 16 paired differences, grouped by order, plus
 the DWT reading when available. The DWT conversion uses the nominal 16 MHz
 board configuration. Compare raw cycles separately if the real clock rate is
 measured.
 
-Near-coincident diagnostic and release edges are flagged as ambiguous at the
-supplied sample resolution. The reported four-sample bound covers only
+The output reports RX completion to PD12 rise and diagnostic TX start to
+PD12 fall. Near-coincident events are flagged as ambiguous at the supplied
+sample resolution. The reported four-sample bound covers only
 conservative timestamp quantization of the four edges in a paired difference.
 Clock accuracy, channel skew and UART decoder uncertainty are separate.
 The analyzer does not decide whether a timing difference is operationally
 material. Retain the original logic-analyzer capture, the CSV and both runner
 files so a different analysis can reproduce the measurement.
 
-The synthetic alignment and rejection checks can run without a board.
+The synthetic checks reproduce the previously missed 300 microsecond early
+edge and now reject it. They also reject a corrupted RX request.
 
 ```powershell
 python tests/test_holding_capture.py

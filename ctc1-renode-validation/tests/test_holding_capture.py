@@ -10,7 +10,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 from analyze_holding_capture import analyze
-from run_timing import packet
+from run_timing import frame, packet
 
 
 class CaptureTests(unittest.TestCase):
@@ -26,15 +26,18 @@ class CaptureTests(unittest.TestCase):
         self.next_time = 1000
         comparisons = []
         for order in ([1, 2], [2, 1]):
-            self.add_case(packet(31), width=200, diagnostic_offset=20)
+            self.add_case(packet(31), width=200, diagnostic_offset=20, tc_sequence=252)
             comparison = dict(mode_order=order, paired_protocol_outcomes_identical=True)
             for mode in order:
                 records = []
                 for uid in range(1, 9):
                     data = packet(uid)
+                    tc_sequence = (251 + uid) % 256
                     self.add_case(data, width=900 if mode == 1 else 100,
+                                  tc_sequence=tc_sequence,
                                   diagnostic_offset=20 if mode == 1 else 110)
-                    records.append(dict(outcome=dict(command_uid=uid, committed_hex=data.hex(),
+                    records.append(dict(outcome=dict(command_uid=uid, tc_sequence=tc_sequence,
+                                                     committed_hex=data.hex(),
                                                      result_hex="01", state_hex="02"),
                                         dwt_cycles=1200 if mode == 2 else None))
                 comparison["inline" if mode == 1 else "deferred"] = dict(records=records)
@@ -52,8 +55,13 @@ class CaptureTests(unittest.TestCase):
             self.events.append(((start + 87 * index) / 1e6, "tx", f"{byte:02x}"))
         return start + 87 * len(wire)
 
-    def add_case(self, data, width, diagnostic_offset):
-        rise = self.next_time
+    def add_case(self, data, width, diagnostic_offset, tc_sequence):
+        request = frame(tc_sequence, data)
+        body = struct.pack(">BBH", 1, 7, len(request)) + request
+        wire = b"\xa5\x5a" + body + struct.pack(">H", binascii.crc_hqx(body, 0xffff))
+        for index, byte in enumerate(wire):
+            self.events.append(((self.next_time + index * 87) / 1e6, "rx", f"{byte:02x}"))
+        rise = self.next_time + (len(wire) - 1) * 87 + 40
         self.events.extend([(rise / 1e6, "pd12", "1"), ((rise + width) / 1e6, "pd12", "0")])
         end = self.add_uart(rise + diagnostic_offset, 0x83, 7, b"\x01")
         end = self.add_uart(end, 0x80, 7, b"\x02")
@@ -76,9 +84,11 @@ class CaptureTests(unittest.TestCase):
             self.assertAlmostEqual(case["median_inline_minus_deferred_us"], 800)
             self.assertEqual(case["modes"]["deferred"][0]["dwt_nominal_us"], 75)
             self.assertIsNone(case["modes"]["inline"][0]["dwt_nominal_us"])
+            self.assertAlmostEqual(case["modes"]["inline"][0]["rx_complete_to_gpio_us"], 40)
 
     def test_rejects_a_missing_pulse(self):
-        del self.events[1:3]
+        first_rise = self.events.index(next(row for row in self.events if row[1:] == ("pd12", "1")))
+        del self.events[first_rise:first_rise + 2]
         with self.assertRaisesRegex(RuntimeError, "34 complete"):
             self.run_capture()
 
@@ -87,6 +97,21 @@ class CaptureTests(unittest.TestCase):
         stamp, signal, _ = self.events[index]
         self.events[index] = (stamp, signal, "00")
         with self.assertRaisesRegex(RuntimeError, "differs from the host log"):
+            self.run_capture()
+
+    def test_rejects_the_300_us_early_gpio_edge(self):
+        edges = [i for i, event in enumerate(self.events) if event[1:] == ("pd12", "1")]
+        index = edges[1]
+        stamp, signal, value = self.events[index]
+        self.events[index] = (stamp - 300e-6, signal, value)
+        with self.assertRaisesRegex(RuntimeError, "before the RX request is complete"):
+            self.run_capture()
+
+    def test_rejects_a_corrupted_rx_request(self):
+        index = next(i for i, (_, signal, _) in enumerate(self.events) if signal == "rx") + 2
+        stamp, signal, _ = self.events[index]
+        self.events[index] = (stamp, signal, "02")
+        with self.assertRaisesRegex(RuntimeError, "Invalid RX CRC"):
             self.run_capture()
 
     def test_rejects_a_different_uart_session(self):
