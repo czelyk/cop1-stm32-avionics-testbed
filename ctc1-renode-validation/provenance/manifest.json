@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2229,
-      "sha256": "2f069c5e2e5ec7cad0c2e9462d85ab7b757ec46182ccc8f76441ef885cebe6b6"
+      "bytes": 2376,
+      "sha256": "71fff584d9c24aba9b9aa16a0ea74329de214b0d2a798e852fc870c7f3a691f0"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -37,6 +37,11 @@
       "sha256": "1c79fd923e1838b2bf952a8129fe1c71932e66c1b4ea1b19343891066169c47a"
     },
     {
+      "path": "docs/HOLDING-PILOT.md",
+      "bytes": 7191,
+      "sha256": "9e2a2212f055a890192ee29097ba059133a67601305b3ab65cea48504a6e0ae6"
+    },
+    {
       "path": "docs/TIMING-PROBE.md",
       "bytes": 3870,
       "sha256": "755b8a3b371867ea8ed4f49ee4a4591b83b5a55e72906fedc42697f7f47aa661"
@@ -45,6 +50,16 @@
       "path": "docs/original-results.md",
       "bytes": 8963,
       "sha256": "af63c89a9327725a477585eb5d298767060941045a315704f98ded31c4eb18da"
+    },
+    {
+      "path": "evidence/holding-pilot/board-build.json",
+      "bytes": 227,
+      "sha256": "55efad976b54f0774acee660b6088ab3cc4e6990197947c2c46c66b3cbf66957"
+    },
+    {
+      "path": "evidence/holding-pilot/renode.json",
+      "bytes": 25727,
+      "sha256": "42371bc29b7257415829a9ac9a65b6979cd8353165d9441dd7bb68ae5f2fae89"
     },
     {
       "path": "evidence/packaging-20261022/FROZEN-CAMPAIGN.json",
@@ -443,8 +458,8 @@
     },
     {
       "path": "src/pool_adapter.c",
-      "bytes": 2463,
-      "sha256": "7db34db1829c1d331441933e4ea19005b284953c81199e24d7e2f8a84e962f8b"
+      "bytes": 2622,
+      "sha256": "8c6ef4777ceb7d06c80a264de6f3e9d4924aa2820cce355461bcec934e201f0f"
     },
     {
       "path": "src/renode.config",
@@ -488,8 +503,8 @@
     },
     {
       "path": "src/stm32_firmware.c",
-      "bytes": 10226,
-      "sha256": "fc246528bad824bb182a646ee149b0b06cdc18e2daed8cefb33febd1bf26f939"
+      "bytes": 12669,
+      "sha256": "ebba3c2b7ee3bcef3625e284dd20e620c7f76c905ab297042c1b8f589ab888f0"
     },
     {
       "path": "src/stm32_profile.repl",
@@ -502,14 +517,29 @@
       "sha256": "dba7e579e84a183100fb4e5d7ccaaf58e9245e6b94ff51fb4dda9b2a3767daee"
     },
     {
+      "path": "tests/analyze_holding_capture.py",
+      "bytes": 9589,
+      "sha256": "4cb07baf0557b969e0e311205ca6f51914c830f14f05fa7b1a967e7e5c98ecf0"
+    },
+    {
       "path": "tests/run.py",
       "bytes": 4078,
       "sha256": "7466f978290a9750ad51aac96a0da0f8536a74ad6ca8d12617ded16c8d5f246a"
     },
     {
+      "path": "tests/run_holding.py",
+      "bytes": 10248,
+      "sha256": "8e4016823ecf19a2cd89a4b14aa8c2baba3752432fc696e43d8361661ee5a3f0"
+    },
+    {
       "path": "tests/run_timing.py",
-      "bytes": 8136,
-      "sha256": "28080bfcc14a6d1f3f3c436afc160bf1483d151466454614b033d326fbdaac9e"
+      "bytes": 8527,
+      "sha256": "284c0d48b9a6542ba867e48442a98557e9bf29c35cf6bb7e45206bb2d7bcb081"
+    },
+    {
+      "path": "tests/test_holding_capture.py",
+      "bytes": 6075,
+      "sha256": "53058f4305e17f4692be2285690b7a3354377c0d53bb588ff7cefd3e2e7e9f35"
     },
     {
       "path": "tests/test_timing_wire.py",

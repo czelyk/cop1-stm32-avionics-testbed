@@ -1,0 +1,7 @@
+{
+  "mode": "board-timing",
+  "board_capture": false,
+  "elf_sha256": "7fae1e40592fe43594de5e2af0172b108a72fb851f4df1270c5281558fd4f6cc",
+  "configured_core_hz": 16000000,
+  "compiler": "Arm GNU Toolchain 15.2.Rel1 (15.2.1)"
+}

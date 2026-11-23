@@ -27,10 +27,44 @@ static uint8_t tm_index;
 #define DWT_CTRL 0xE0001000U
 #define DWT_CYCCNT 0xE0001004U
 #define DEMCR 0xE000EDFCU
+#define GPIOD 0x40020c00U
+#define HOLD_PIN (1U << 12)
+#define INLINE_AUTO 1U
+#define DEFERRED_AUTO 2U
+#define TC_DIAGNOSTIC_BYTES (48U + 104U)
 enum { FARM_SAMPLE, COMMIT_SAMPLE, TM_SAMPLE, PHASES };
 static uint32_t timing_ready;
 static volatile uint32_t uart_overruns, uart_errors, rx_ring_peak;
 static uint32_t timing_calls[PHASES], timing_max[PHASES];
+static uint32_t hold_start_cycles, hold_last_cycles, hold_starts, hold_ends;
+static uint32_t staged_bytes, stage_overflow, staging, staged_size;
+static uint8_t staged[TC_DIAGNOSTIC_BYTES];
+
+static void init_hold_pin(void) {
+    REG(0x40023830U) |= 1U << 3;
+    (void)REG(0x40023830U);
+    REG(GPIOD + 0x18U) = HOLD_PIN << 16;
+    REG(GPIOD) = (REG(GPIOD) & ~(3U << 24)) | (1U << 24);
+}
+
+/* The pin is high while the pool is nonempty. In the pilot capacity is one. */
+void probe_owned(uint32_t owned) {
+    if (owned) {
+        REG(GPIOD + 0x18U) = HOLD_PIN;
+        if (timing_ready) hold_start_cycles = REG(DWT_CYCCNT);
+        ++hold_starts;
+    } else {
+        if (timing_ready) hold_last_cycles = REG(DWT_CYCCNT) - hold_start_cycles;
+        REG(GPIOD + 0x18U) = HOLD_PIN << 16;
+        ++hold_ends;
+    }
+}
+
+static void reset_hold(void) {
+    REG(GPIOD + 0x18U) = HOLD_PIN << 16;
+    hold_start_cycles = hold_last_cycles = hold_starts = hold_ends = 0;
+    staged_bytes = stage_overflow = 0;
+}
 
 static void init_timing(void) {
     REG(DEMCR) |= 1U << 24;
@@ -105,10 +139,34 @@ static uint16_t crc_byte(uint16_t crc, uint8_t value) {
     for (uint32_t i = 0; i < 8; i++) crc = (crc & 0x8000) ? (uint16_t)((crc << 1) ^ 0x1021) : (uint16_t)(crc << 1);
     return crc;
 }
-static void tx(uint8_t value) {
+static void tx_wire(uint8_t value) {
     while (!(REG(UART) & (1U << 7))) { }
     REG(UART + 4) = value;
 }
+
+static void tx(uint8_t value) {
+#ifdef CTC_TIMING
+    if (staging) {
+        if (staged_size == sizeof(staged)) {
+            ++stage_overflow;
+        } else {
+            staged[staged_size++] = value;
+            ++staged_bytes;
+        }
+        return;
+    }
+#endif
+    tx_wire(value);
+}
+
+#ifdef CTC_TIMING
+static void flush_diagnostics(void) {
+    for (uint32_t i = 0; i < staged_size; ++i) tx_wire(staged[i]);
+    staged_size = 0;
+}
+#else
+#define flush_diagnostics() ((void)0)
+#endif
 static void record(uint8_t kind, uint8_t seq, const uint8_t *data, uint32_t length) {
     uint8_t header[4] = {kind, seq, (uint8_t)(length >> 8), (uint8_t)length};
     uint16_t crc = 0xffff;
@@ -125,6 +183,12 @@ static void timing_record(uint8_t seq) {
         data[7 + 2 * i] = timing_max[i];
     }
     record(0x84, seq, (const uint8_t *)data, sizeof(data));
+}
+
+static void hold_record(uint8_t seq) {
+    uint32_t data[8] = {1, timing_ready, hold_starts, hold_ends, hold_last_cycles,
+                        staged_bytes, stage_overflow, automatic};
+    record(0x85, seq, (const uint8_t *)data, sizeof(data));
 }
 #endif
 
@@ -195,20 +259,28 @@ static void dispatch(void) {
         frame_count = max_owned = 0; tm_index = 0; last_feedback = ticks;
 #ifdef CTC_TIMING
         for (unsigned i = 0; i < PHASES; ++i) timing_calls[i] = timing_max[i] = 0;
+        reset_hold();
 #endif
     } else if (op == 1 && n >= 19 && n <= 261) {
         for (uint32_t i = 0; i < n; i++) incoming[i] = message[6 + i];
         input[0] = 1; input[1] = n; timed_step(FARM_SAMPLE); frame_count++;
         if (output[3] > max_owned) max_owned = output[3];
+#ifdef CTC_TIMING
+        staging = automatic == INLINE_AUTO || automatic == DEFERRED_AUTO;
+#endif
         record(0x83, seq, (const uint8_t *)output, 40);
     } else if (op == 2 && !n) { input[0] = 2; timed_step(COMMIT_SAMPLE); enqueue_committed(); }
     else if (op == 3 && !n) { }
     else if (op == 4 && !n) { emit_tm(); }
 #ifdef CTC_TIMING
     else if (op == 5 && !n) { timing_record(seq); }
+    else if (op == 6 && !n) { hold_record(seq); }
 #endif
     else { protocol_errors++; }
     status(seq);
+#ifdef CTC_TIMING
+    staging = 0;
+#endif
 }
 static void parse_rx(void) {
     while (rx_tail != rx_head) {
@@ -220,7 +292,16 @@ static void parse_rx(void) {
             wanted = 8 + ((uint32_t)message[4] << 8) + message[5];
             if (wanted > sizeof(message)) { protocol_errors++; message_size = 0; }
         }
-        if (message_size >= 6 && message_size == wanted) { dispatch(); message_size = 0; }
+        if (message_size >= 6 && message_size == wanted) {
+            dispatch();
+            message_size = 0;
+#ifdef CTC_TIMING
+            if (staged_size) {
+                if (automatic == INLINE_AUTO) flush_diagnostics();
+                break;
+            }
+#endif
+        }
     }
 }
 void firmware_main(void) {
@@ -230,6 +311,7 @@ void firmware_main(void) {
 #endif
 #ifdef CTC_TIMING
     init_timing();
+    init_hold_pin();
 #endif
     REG(0x40023830) |= 1U;              /* GPIOA clock */
     REG(0x40023840) |= 1U << 17;        /* USART2 clock */
@@ -245,7 +327,14 @@ void firmware_main(void) {
     status(0xff);
     for (;;) {
         parse_rx();
-        if (automatic && output[3]) { input[0] = 2; timed_step(COMMIT_SAMPLE); enqueue_committed(); }
+        if (automatic && output[3]) {
+            input[0] = 2;
+            timed_step(COMMIT_SAMPLE);
+            flush_diagnostics();
+            enqueue_committed();
+        } else {
+            flush_diagnostics();
+        }
         uint32_t queued = 0;
         for (uint32_t i = 0, index = reply_head; i < reply_count; i++, index = (index + 1) % REPLIES) queued += reply_length[index];
         if (automatic && (queued >= 261 || ticks - last_feedback >= feedback_period)) { emit_tm(); last_feedback = ticks; }

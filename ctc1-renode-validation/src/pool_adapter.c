@@ -3,6 +3,11 @@
 #include "cfe.h"
 #define LIMIT 8
 #define PAYLOAD 256
+#ifdef CTC_TIMING
+extern void probe_owned(uint32 owned);
+#else
+#define probe_owned(owned) ((void)0)
+#endif
 volatile uint32 input[4], output[10];
 uint8 incoming[261], slots[LIMIT][PAYLOAD+8], committed[PAYLOAD];
 COP1_Clcw_t clcw;
@@ -26,7 +31,7 @@ void step(void){
   else{
    for(uint32 j=0;j<active;j++)if(lengths[j]==0){slot=j;break;}
    ret=COP1_ProcessFrame(slot<LIMIT?&slots[slot][4]:0,&clcw,(TCTF_Hdr_t*)incoming,&channel);
-   if(ret>0){lengths[slot]=(uint32)ret;fifo[tail]=slot;tail=(tail+1)%LIMIT;count++;}
+   if(ret>0){lengths[slot]=(uint32)ret;fifo[tail]=slot;tail=(tail+1)%LIMIT;count++;if(count==1)probe_owned(1);}
   }
  }else if(input[0]==2&&count){
   slot=fifo[head];uint32 p=0,n=lengths[slot];
@@ -36,7 +41,7 @@ void step(void){
    if(q[0]!=0x10||q[1]!=0x42||(q[2]>>6)!=3||size<14||size>n-p){ret=-20;break;}
    p+=size;added++;
   }
-  if(ret==0){for(uint32 i=0;i<n;i++)committed[i]=slots[slot][4+i];sink=n;commits+=added;lengths[slot]=0;head=(head+1)%LIMIT;count--;clcw.Flags&=(uint8)~0x10U;}
+  if(ret==0){for(uint32 i=0;i<n;i++)committed[i]=slots[slot][4+i];sink=n;commits+=added;lengths[slot]=0;head=(head+1)%LIMIT;count--;if(!count)probe_owned(0);clcw.Flags&=(uint8)~0x10U;}
  }else if(input[0]!=2&&input[0]!=3)ret=-30;
  output[0]=(uint32)ret;output[1]=clcw.Report;output[2]=clcw.Flags;output[3]=count;output[4]=guards();output[5]=commits;output[6]=sink;output[7]=added;output[8]=count?lengths[fifo[head]]:0;output[9]=active;
 }
