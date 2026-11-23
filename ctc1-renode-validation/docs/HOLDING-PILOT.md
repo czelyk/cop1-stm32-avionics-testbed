@@ -89,6 +89,48 @@ each paired comparison is the manual control and should be excluded from
 the paired timing results. A failed transport or functional check invalidates
 the affected comparison.
 
+### Pair the external capture with the board log
+
+Start the capture after reset traffic has finished, while PD12 is low and
+before starting the Python board runner. Stop after the runner finishes.
+Export PD12 transitions and decoded target TX bytes on the **same analyzer
+timebase**. Normalize both exports to one chronological CSV with header
+`time_s,signal,value`. The first row gives the initial low PD12 level.
+For `pd12` rows use `0` or `1`. For `tx` rows use one two-digit hexadecimal
+byte and timestamp its start bit. Keep all UART records between the start
+and end of the invocation. Capture TX in the same direction as seen by the
+host.
+
+Run the following with the actual logic-analyzer sample period in microseconds.
+The paths below stand for the two files from **one** board run and its
+corresponding capture.
+
+```powershell
+python tests/analyze_holding_capture.py holding.json board_uart.jsonl capture.csv --resolution-us 0.1
+```
+
+The analyzer matches the entire decoded TX stream byte for byte against the
+hash-bound UART log, validates record CRCs and pairs each of the 34 complete
+PD12 pulses with its expected command commit. It excludes one manual control
+per execution order. It reports 16 paired differences, grouped by order, plus
+the DWT reading when available. The DWT conversion uses the nominal 16 MHz
+board configuration. Compare raw cycles separately if the real clock rate is
+measured.
+
+Near-coincident diagnostic and release edges are flagged as ambiguous at the
+supplied sample resolution. The reported four-sample bound covers only
+conservative timestamp quantization of the four edges in a paired difference.
+Clock accuracy, channel skew and UART decoder uncertainty are separate.
+The analyzer does not decide whether a timing difference is operationally
+material. Retain the original logic-analyzer capture, the CSV and both runner
+files so a different analysis can reproduce the measurement.
+
+The synthetic alignment and rejection checks can run without a board.
+
+```powershell
+python tests/test_holding_capture.py
+```
+
 The planned hardware check is a prerequisite for a timed receiver model.
 Physical holding times and any effect on buffer or feedback selection remain
 unmeasured.

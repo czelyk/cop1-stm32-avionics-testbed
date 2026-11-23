@@ -207,7 +207,8 @@ def main():
         result = dict(mode="renode", physical_measurements=False, elf_sha256=digest,
                       comparisons=comparisons, register_write_order=ordering)
     else:
-        with (run / "board_uart.jsonl").open("x", encoding="utf-8") as log:
+        uart_log = run / "board_uart.jsonl"
+        with uart_log.open("x", encoding="utf-8") as log:
             target = Board(args.port, log)
             try:
                 # Consume a possible startup status while waiting for the first explicit status.
@@ -215,7 +216,8 @@ def main():
                 comparisons = [compare(target, order) for order in ((1, 2), (2, 1))]
             finally:
                 target.close()
-        result = dict(mode="board", comparisons=comparisons)
+        result = dict(mode="board", comparisons=comparisons,
+                      uart_sha256=sha256(uart_log.read_bytes()).hexdigest())
     (run / "holding.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(run / "holding.json")
 
