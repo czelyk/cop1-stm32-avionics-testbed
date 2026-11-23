@@ -93,8 +93,36 @@ the affected comparison.
 
 Start the capture after reset traffic has finished, while PD12 is low and
 before starting the Python board runner. Stop after the runner finishes.
-Export PD12 transitions and decoded target RX and TX bytes on the **same
-analyzer timebase**. Normalize both exports to one chronological CSV with header
+### Convert a logic-analyzer VCD export
+
+The converter reads three named scalar channels with one common timebase.
+It extracts PD12 transitions and decodes non-inverted 8N1 UART on both
+lines. It timestamps TX at each start bit and RX at the calculated center
+of each stop bit. From a sigrok capture, export VCD with
+`sigrok-cli -i capture.sr -O vcd -o capture.vcd`. Read the channel names
+from the VCD declarations and replace the names in the command below if
+needed. Use the measured baud for each direction. The numbers shown are
+the nominal bench settings.
+
+```powershell
+python tests/convert_holding_vcd.py capture.vcd capture.csv --pd12 D0 --rx D1 --tx D2 --rx-baud 115200 --tx-baud 115200
+```
+
+The VCD should start with a low PD12 level and idle-high UART lines and
+retain idle samples after the last response. The converter rejects
+unknown selected channel levels and framing errors. The separate analyzer
+below checks frame CRCs and correspondence with the host capture.
+Use the actual analyzer sample period when analyzing the result. The VCD
+timescale is a timestamp unit and need not equal that period. The
+converter and analyzer were tested together with a synthetic three-channel
+waveform. The physical acquisition and export path remains untested.
+[Sigrok CLI documentation](https://sigrok.org/wiki/Sigrok-cli)
+
+### Analyze the event CSV
+
+If exporting already decoded serial data instead of VCD, export PD12
+transitions and decoded target RX and TX bytes on the **same analyzer
+timebase**. Normalize both exports to one chronological CSV with header
 `time_s,signal,value`. The first row gives the initial low PD12 level.
 For `pd12` rows use `0` or `1`. For `rx` and `tx` rows use one two-digit
 hexadecimal byte. Directions are from the board's perspective. Timestamp

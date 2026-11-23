@@ -3,6 +3,7 @@
 import binascii
 import csv
 from hashlib import sha256
+from io import StringIO
 import json
 from pathlib import Path
 import struct
@@ -10,6 +11,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 from analyze_holding_capture import analyze
+from convert_holding_vcd import convert
 from run_timing import frame, packet
 
 
@@ -85,6 +87,47 @@ class CaptureTests(unittest.TestCase):
             self.assertEqual(case["modes"]["deferred"][0]["dwt_nominal_us"], 75)
             self.assertIsNone(case["modes"]["inline"][0]["dwt_nominal_us"])
             self.assertAlmostEqual(case["modes"]["inline"][0]["rx_complete_to_gpio_us"], 40)
+
+    def test_decodes_vcd_and_reproduces_the_paired_measurement(self):
+        rx_baud, tx_baud = 116000, 115200
+        identifiers = {"pd12": "!", "rx": '"', "tx": "#"}
+        events = [(0, '"', 1), (0, "#", 1)]
+        for stamp, name, value in self.events:
+            chan = identifiers[name]
+            if name == "pd12":
+                events.append((round(stamp * 1e9), chan, int(value)))
+                continue
+            bit_period = 1 / (tx_baud if name == "tx" else rx_baud)
+            start = stamp if name == "tx" else stamp - 9.5 * bit_period
+            payload = int(value, 16)
+            bits = [0, *[(payload >> i) & 1 for i in range(8)], 1]
+            events.extend((round((start + i * bit_period) * 1e9), chan, bit)
+                          for i, bit in enumerate(bits))
+
+        vcd = ["$timescale 1 ns $end", "$scope module logic $end",
+               *[f"$var wire 1 {identifier} {name} $end" for name, identifier in identifiers.items()],
+               "$upscope $end", "$enddefinitions $end"]
+        vcd.extend(f"#{tick} {bit}{channel}" for tick, channel, bit in sorted(events))
+        vcd.append(f"#{max(tick for tick, _, _ in events) + 20000}")
+        with self.capture.open("w", encoding="utf-8", newline="") as target:
+            convert(StringIO("\n".join(vcd)), target, "pd12", "rx", "tx", rx_baud, tx_baud)
+        result = analyze(self.report, self.log, self.capture, resolution_us=1)
+        for case in result["comparisons"]:
+            self.assertAlmostEqual(case["median_inline_minus_deferred_us"], 800)
+            self.assertAlmostEqual(case["modes"]["inline"][0]["rx_complete_to_gpio_us"], 40, places=2)
+
+    def test_vcd_rejects_a_truncated_stop_bit(self):
+        source = StringIO("""$timescale 1 us $end
+$var wire 1 ! pd12 $end
+$var wire 1 a rx $end
+$var wire 1 b tx $end
+$enddefinitions $end
+#0 0! 1a 1b
+#10 0a 0b
+#19 1a 1b
+""")
+        with self.assertRaisesRegex(RuntimeError, "framing error or truncated byte"):
+            convert(source, StringIO(), "pd12", "rx", "tx", 1000000, 1000000)
 
     def test_rejects_a_missing_pulse(self):
         first_rise = self.events.index(next(row for row in self.events if row[1:] == ("pd12", "1")))
