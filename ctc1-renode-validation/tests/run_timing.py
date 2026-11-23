@@ -1,6 +1,7 @@
 """Build the timing fixture and verify its diagnostic UART records."""
 import argparse
 import binascii
+from contextlib import contextmanager
 import hashlib
 import json
 import os
@@ -109,30 +110,61 @@ class Board:
             data.extend(self.uart.read(length - len(data)))
         return bytes(data)
 
-    def request(self, op, data=b''):
+    def send(self, op, data=b''):
         self.sequence = (self.sequence + 1) & 255
         payload = struct.pack('>BBH', op, self.sequence, len(data)) + data
         wire = b'\xa5\x5a' + payload + struct.pack('>H', binascii.crc_hqx(payload, 0xffff))
         self.uart.write(wire)
+        return self.sequence
+
+    def receive(self, deadline):
+        header = self.read_exact(6, deadline)
+        require(header[:2] == b'\x5a\xa5', 'UART record marker mismatch; reset the board')
+        kind, sequence, size = struct.unpack('>BBH', header[2:])
+        require(size <= 280, 'UART record is longer than the fixture allows')
+        tail = self.read_exact(size + 2, deadline)
+        require(binascii.crc_hqx(header[2:] + tail[:-2], 0xffff) == int.from_bytes(tail[-2:], 'big'),
+                'UART record CRC mismatch')
+        item = dict(kind=kind, sequence=sequence, payload_hex=tail[:-2].hex(), record_hex=(header + tail).hex())
+        self.log.write(json.dumps(item) + '\n')
+        self.log.flush()
+        return item
+
+    def request(self, op, data=b''):
+        sequence = self.send(op, data)
         deadline = time.monotonic() + 5
         records = []
         while True:
-            header = self.read_exact(6, deadline)
-            require(header[:2] == b'\x5a\xa5', 'UART record marker mismatch; reset the board')
-            kind, sequence, size = struct.unpack('>BBH', header[2:])
-            require(size <= 280, 'UART record is longer than the fixture allows')
-            tail = self.read_exact(size + 2, deadline)
-            require(binascii.crc_hqx(header[2:] + tail[:-2], 0xffff) == int.from_bytes(tail[-2:], 'big'),
-                    'UART record CRC mismatch')
-            item = dict(kind=kind, sequence=sequence, payload_hex=tail[:-2].hex(), record_hex=(header + tail).hex())
-            self.log.write(json.dumps(item) + '\n')
-            self.log.flush()
+            item = self.receive(deadline)
             records.append(item)
-            if kind == 0x80 and sequence == self.sequence:
-                return struct.unpack('<24I', tail[:-2]), records
+            if item['kind'] == 0x80 and item['sequence'] == sequence:
+                return struct.unpack('<24I', bytes.fromhex(item['payload_hex'])), records
 
     def close(self):
         self.uart.close()
+
+
+def build_timing(work, profile):
+    env = dict(os.environ, ARM_GCC=str(find_tool('arm-none-eabi-gcc', 'ARM_GCC')),
+               CTC_NASA_DIR=str(bootstrap('nasa') / 'nasa'))
+    execute([sys.executable, work / 'build_firmware.py', '--profile', profile], work, 'timing-build.log', env)
+    return hashlib.sha256((work / 'stm32_farm.elf').read_bytes()).hexdigest()
+
+
+@contextmanager
+def timing_renode(work, label):
+    if 'RENODE_HOME' not in os.environ:
+        os.environ['RENODE_HOME'] = str(bootstrap('renode') / 'renode/renode_1.17.0-portable')
+    sys.path.insert(0, str(work))
+    try:
+        from renode_driver import Renode
+    finally:
+        sys.path.pop(0)
+    target = Renode(label)
+    try:
+        yield target
+    finally:
+        target.close()
 
 
 def main():
@@ -153,23 +185,12 @@ def main():
         record = dict(mode='board', board_capture=True, cycle_counter_available=all(
             case['counter_available'] for case in cases), cases=cases)
     else:
-        env = dict(os.environ, ARM_GCC=str(find_tool('arm-none-eabi-gcc', 'ARM_GCC')),
-                   CTC_NASA_DIR=str(bootstrap('nasa') / 'nasa'))
         profile = 'renode-timing' if args.renode else 'board-timing'
-        execute([sys.executable, work / 'build_firmware.py', '--profile', profile], work, 'timing-build.log', env)
-        elf = work / 'stm32_farm.elf'
-        record = dict(mode=profile, board_capture=False, elf_sha256=hashlib.sha256(elf.read_bytes()).hexdigest(),
+        record = dict(mode=profile, board_capture=False, elf_sha256=build_timing(work, profile),
                       configured_core_hz=CLOCKS['renode' if args.renode else 'board'])
         if args.renode:
-            if 'RENODE_HOME' not in os.environ:
-                os.environ['RENODE_HOME'] = str(bootstrap('renode') / 'renode/renode_1.17.0-portable')
-            sys.path.insert(0, str(work))
-            from renode_driver import Renode
-            renode = Renode('timing_probe')
-            try:
-                record['cases'] = measure(renode, 'renode')
-            finally:
-                renode.close()
+            with timing_renode(work, 'timing_probe') as target:
+                record['cases'] = measure(target, 'renode')
     (run / 'timing.json').write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps(dict(record, run_directory=str(run)), indent=2))
 

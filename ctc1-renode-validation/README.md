@@ -21,7 +21,9 @@ rerunning the experiment. New runs go to ignored `runs/` directories (or
 
 The optional [STM32F407 timing probe](docs/TIMING-PROBE.md) builds a
 16 MHz board image and checks its diagnostic format using a separate
-Renode profile. It reports FARM, command commit and TM phases separately.
+Renode profile. It reports FARM, command commit and TM phases separately. The
+[buffer holding-time pilot](docs/HOLDING-PILOT.md) adds a GPIO marker and
+compares UART diagnostics before and after automatic buffer release.
 
 ## Contents
 
