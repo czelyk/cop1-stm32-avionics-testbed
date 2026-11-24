@@ -152,16 +152,32 @@ board configuration. Compare raw cycles separately if the real clock rate is
 measured.
 
 The output reports RX completion to PD12 rise and diagnostic TX start to
-PD12 fall. Near-coincident events are flagged as ambiguous at the supplied
-sample resolution. The reported four-sample bound covers only
-conservative timestamp quantization of the four edges in a paired difference.
-Clock accuracy, channel skew and UART decoder uncertainty are separate.
+PD12 fall. Use `--rx-stop-error-us` for a separately established bound
+on RX stop-bit timestamp error beyond sample quantization. For a VCD
+converted at a configured baud, a bound on the bit period error contributes
+9.5 times that error to the stop-center estimate. Record how the rate and
+uncertainty were obtained. With no additional bound supplied, the analyzer
+uses only sample resolution for RX ordering.
+
+The RX-to-PD12 order is ambiguous within the sum of both terms and is
+rejected if the edge is earlier than this combined bound. The diagnostic TX
+ordering check still uses sample resolution. The reported four-sample bound
+covers only conservative timestamp quantization of the four GPIO edges in
+a paired difference. RX timestamp uncertainty does not change those GPIO
+widths. Analyzer clock accuracy and channel skew still need to be assessed
+for the physical bench.
 The analyzer does not decide whether a timing difference is operationally
 material. Retain the original logic-analyzer capture, the CSV and both runner
 files so a different analysis can reproduce the measurement.
 
-The synthetic checks reproduce the previously missed 300 microsecond early
-edge and now reject it. They also reject a corrupted RX request.
+The synthetic checks place a GPIO edge 0.45 us after true RX completion.
+Decoding with a 1% low baud estimate moves the reported difference to about
+-0.38 us despite the exact same UART bytes. With a 0.1 us sample period and
+no additional bound, the analyzer rejects the record. With a 0.84 us RX
+timestamp bound, it accepts the record while flagging that edge order as
+ambiguous. The paired GPIO widths remain identical. The 300 us early edge
+still fails under the same bound. These values are test inputs and results,
+with physical UART and analyzer uncertainty still to be measured.
 
 ```powershell
 python tests/test_holding_capture.py

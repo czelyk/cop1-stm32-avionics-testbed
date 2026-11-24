@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/HOLDING-PILOT.md",
-      "bytes": 8603,
-      "sha256": "387d62bb8219d8e21aec292a208250c6670aa684ff45935d690e758f1fbc5e8d"
+      "bytes": 9641,
+      "sha256": "72c51cc4017816471008b6ed59f29d6ca4d54cf2b277589c71eefcb01df5a3a1"
     },
     {
       "path": "docs/TIMING-PROBE.md",
@@ -518,8 +518,8 @@
     },
     {
       "path": "tests/analyze_holding_capture.py",
-      "bytes": 9589,
-      "sha256": "4cb07baf0557b969e0e311205ca6f51914c830f14f05fa7b1a967e7e5c98ecf0"
+      "bytes": 10180,
+      "sha256": "5a1ddf07eeac127d04ebdcef12bde206d9d7343148b3a42d08c998e77f631370"
     },
     {
       "path": "tests/convert_holding_vcd.py",
@@ -543,8 +543,8 @@
     },
     {
       "path": "tests/test_holding_capture.py",
-      "bytes": 8194,
-      "sha256": "78b9dca88effa79dfb83cadc929ef355c746c321eae0d9dded54c752fd68de6a"
+      "bytes": 9666,
+      "sha256": "2456ec988b2561c5283553e42ac40668aa3597da90dcf24d6161f1d7c9ab6d3b"
     },
     {
       "path": "tests/test_timing_wire.py",
