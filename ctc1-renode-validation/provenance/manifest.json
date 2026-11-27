@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2376,
-      "sha256": "71fff584d9c24aba9b9aa16a0ea74329de214b0d2a798e852fc870c7f3a691f0"
+      "bytes": 2534,
+      "sha256": "b5889d7d95f52b33bff272f48a4b7987607ce64ef14d444cef4f3aa3dbef5115"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -35,6 +35,11 @@
       "path": "dependencies.lock.json",
       "bytes": 1456,
       "sha256": "1c79fd923e1838b2bf952a8129fe1c71932e66c1b4ea1b19343891066169c47a"
+    },
+    {
+      "path": "docs/CAPACITY-PAIR.md",
+      "bytes": 3057,
+      "sha256": "bb167ea255d83abd3fe5b2835d3ab6c30a0b259914d3f7abb18888be31c389ad"
     },
     {
       "path": "docs/HOLDING-PILOT.md",
@@ -55,6 +60,16 @@
       "path": "docs/original-results.md",
       "bytes": 8963,
       "sha256": "af63c89a9327725a477585eb5d298767060941045a315704f98ded31c4eb18da"
+    },
+    {
+      "path": "evidence/capacity-pair/one-first.json",
+      "bytes": 30550,
+      "sha256": "a8731d3e023e80411f2c32f07615a7bec59f91b526ca3250c93cb14085c47291"
+    },
+    {
+      "path": "evidence/capacity-pair/two-first.json",
+      "bytes": 30550,
+      "sha256": "31d2318059114324fa1f1f9a3aaa8cfc60146293fb56a4a06c1bdfbf593aa147"
     },
     {
       "path": "evidence/holding-pilot/board-build.json",
@@ -542,6 +557,11 @@
       "sha256": "7466f978290a9750ad51aac96a0da0f8536a74ad6ca8d12617ded16c8d5f246a"
     },
     {
+      "path": "tests/run_capacity_pair.py",
+      "bytes": 2926,
+      "sha256": "a5e94e4f0b572eee9213a50e7e2d7d26e498856d9199e9b58d21caa4c23cfb0e"
+    },
+    {
       "path": "tests/run_holding.py",
       "bytes": 10248,
       "sha256": "8e4016823ecf19a2cd89a4b14aa8c2baba3752432fc696e43d8361661ee5a3f0"
@@ -555,6 +575,11 @@
       "path": "tests/screen_holding_sensitivity.py",
       "bytes": 4903,
       "sha256": "e05f8a62f4a3f3f241597e5c117c3b11ca2f09fa05a0de86ed5fd9233bd57164"
+    },
+    {
+      "path": "tests/summarize_capacity_pair.py",
+      "bytes": 4317,
+      "sha256": "3e3623ae1cf2807bba78cc4f8f75f8a2b3740544ff2ede4d0f67a3410b437fa6"
     },
     {
       "path": "tests/test_holding_capture.py",

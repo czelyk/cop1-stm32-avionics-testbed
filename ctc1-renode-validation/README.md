@@ -25,6 +25,9 @@ Renode profile. It reports FARM, command commit and TM phases separately. The
 [buffer holding-time pilot](docs/HOLDING-PILOT.md) adds a GPIO marker and
 compares UART diagnostics before and after automatic buffer release.
 
+The [one-versus-two-slot experiment](docs/CAPACITY-PAIR.md) records the matched
+closed-loop runs, the first-frame loss control and the reverse-order repeat.
+
 ## Contents
 
 - `src/`: C firmware, linker/profile files, Renode driver, Java peer and fresh campaign scripts.

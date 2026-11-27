@@ -1,0 +1,1118 @@
+{
+  "nominal": {
+    "runs": [
+      {
+        "capacity": 1,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 0 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 16226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 1 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 2 \u00c2\u00b7 FARM 156"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 3 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 4 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 159094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 161334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 5 \u00c2\u00b7 FARM 192"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 198574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 6 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 245814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 7 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 288684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 290924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 8 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 303831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 306071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 9 \u00c2\u00b7 FARM 128"
+          },
+          {
+            "t": 329228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 10 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 339228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 11 \u00c2\u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 391468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 12 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 432062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 434302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 439302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 13 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 441542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 538782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "summary_sha256": "6c089c1af1a842d34ac0908a4bb80bc30a6e200590e465608dd0dce7da132f19",
+        "trace_sha256": "e1912a22fde48edceb50a80d566e5acc042b23b63482703c098a2c74ae281ade",
+        "p95_source_to_sink_virtual_us": 286929,
+        "max_source_to_sink_virtual_us": 301186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 538782,
+        "time_quantum_bound_us": 5000
+      },
+      {
+        "capacity": 2,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 0 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 16226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 1 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 2 \u00c2\u00b7 FARM 156"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 3 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 4 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 159094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 166334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 5 \u00c2\u00b7 FARM 192"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 198574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 6 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 245814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 7 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 288684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 290924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 8 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 303831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 306071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 9 \u00c2\u00b7 FARM 128"
+          },
+          {
+            "t": 329228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 10 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 339228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 11 \u00c2\u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 391468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 12 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 432062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 434302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 439302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 13 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 441542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 538782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "summary_sha256": "4340a75fddcd7196c8c5a14915354df856e840e2e43156d1975ec2aa4d2c3ab2",
+        "trace_sha256": "ed8e213c1921092f4a94781c1238498ef15767640303bcd9b73162b74582d930",
+        "p95_source_to_sink_virtual_us": 286929,
+        "max_source_to_sink_virtual_us": 301186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 538782,
+        "time_quantum_bound_us": 5000
+      }
+    ],
+    "max": 538782,
+    "focus": 161334,
+    "events_differ": true,
+    "source_sha256": "efcce1eed575f1dfcbcd678e8bbe74506156b104961f40428dccd33a4ca198c4",
+    "comparison": "\u00c4\u00b0lk farkl\u00c4\u00b1 olay zamana i\u00c5\u0178aretlendi."
+  },
+  "first-loss": {
+    "runs": [
+      {
+        "capacity": 1,
+        "events": [
+          {
+            "t": 286,
+            "kind": "loss",
+            "detail": "\u00c4\u00b0lk \u00c3\u00a7er\u00c3\u00a7eve deney gere\u00c4\u0178i silindi"
+          },
+          {
+            "t": 8069,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 41226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 86226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 255 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 1"
+          },
+          {
+            "t": 103466,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 255"
+          },
+          {
+            "t": 105623,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 0"
+          },
+          {
+            "t": 106217,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 1"
+          },
+          {
+            "t": 111249,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 2"
+          },
+          {
+            "t": 119406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 0 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 119406,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 124406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 1 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 124406,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 154406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 2 \u00c2\u00b7 FARM 156"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 201646,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 3 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 201646,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 201646,
+            "kind": "clcw",
+            "detail": "N(R) 2 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 259957,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 4 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 259957,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 262197,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 293511,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 5 \u00c2\u00b7 FARM 192"
+          },
+          {
+            "t": 293511,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 293511,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 295751,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 343658,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 6 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 343658,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 343658,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 345898,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 389055,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 7 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 389055,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 391295,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 436889,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 8 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 439129,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 479129,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 9 \u00c2\u00b7 FARM 248"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 481369,
+            "kind": "clcw",
+            "detail": "N(R) 9 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 526369,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 10 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 526369,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 528609,
+            "kind": "clcw",
+            "detail": "N(R) 10 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 533609,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 11 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 533609,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 535849,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 633089,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "summary_sha256": "e033410d835c0d33e13de604670ecca5ced7b99d11c0733fc19c347faa2ace36",
+        "trace_sha256": "df2be106a20b331d102d2be79595f2f7c8ebdfb071755f12deb5b161290cafbf",
+        "p95_source_to_sink_virtual_us": 387300,
+        "max_source_to_sink_virtual_us": 434244,
+        "sink": 24,
+        "frames": 16,
+        "retries": 4,
+        "clcw_wait": 0,
+        "clcw_retry": 1,
+        "elapsed_us": 633089,
+        "time_quantum_bound_us": 5000
+      },
+      {
+        "capacity": 2,
+        "events": [
+          {
+            "t": 286,
+            "kind": "loss",
+            "detail": "\u00c4\u00b0lk \u00c3\u00a7er\u00c3\u00a7eve deney gere\u00c4\u0178i silindi"
+          },
+          {
+            "t": 8069,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 41226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 86226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00c2\u00b7 V(R) 255 \u00c2\u00b7 FARM -3"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 255 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 1"
+          },
+          {
+            "t": 103466,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 255"
+          },
+          {
+            "t": 105623,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 0"
+          },
+          {
+            "t": 106217,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 1"
+          },
+          {
+            "t": 111249,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 2"
+          },
+          {
+            "t": 119406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 0 \u00c2\u00b7 FARM 64"
+          },
+          {
+            "t": 119406,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 124406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 1 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 124406,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 154406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 2 \u00c2\u00b7 FARM 156"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 154406,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 201646,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 3 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 201646,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 201646,
+            "kind": "clcw",
+            "detail": "N(R) 2 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 259957,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 4 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 259957,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 262197,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 293511,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 5 \u00c2\u00b7 FARM 192"
+          },
+          {
+            "t": 293511,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 293511,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 295751,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 343658,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 6 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 343658,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 343658,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 345898,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 389055,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 7 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 389055,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 391295,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 436889,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 8 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 436889,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 439129,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 479129,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 9 \u00c2\u00b7 FARM 248"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 479129,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 481369,
+            "kind": "clcw",
+            "detail": "N(R) 9 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 526369,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 10 \u00c2\u00b7 FARM 256"
+          },
+          {
+            "t": 526369,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 528609,
+            "kind": "clcw",
+            "detail": "N(R) 10 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 533609,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00c2\u00b7 V(R) 11 \u00c2\u00b7 FARM 14"
+          },
+          {
+            "t": 533609,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 535849,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 633089,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "summary_sha256": "f5c9f0dc9b4b40573befdab77f6a52540d9a6a7b10563db9576e5572de5efe07",
+        "trace_sha256": "e32b0cb734a2a58de3075f0d75a79499011973c5f34fa4678d84d4b3afd4e894",
+        "p95_source_to_sink_virtual_us": 387300,
+        "max_source_to_sink_virtual_us": 434244,
+        "sink": 24,
+        "frames": 16,
+        "retries": 4,
+        "clcw_wait": 0,
+        "clcw_retry": 1,
+        "elapsed_us": 633089,
+        "time_quantum_bound_us": 5000
+      }
+    ],
+    "max": 633089,
+    "focus": 103466,
+    "events_differ": false,
+    "source_sha256": "efcce1eed575f1dfcbcd678e8bbe74506156b104961f40428dccd33a4ca198c4",
+    "comparison": "\u00c4\u00b0ki ko\u00c5\u0178uda g\u00c3\u00b6sterilen olaylar ve zamanlar\u00c4\u00b1 ayn\u00c4\u00b1."
+  }
+}
