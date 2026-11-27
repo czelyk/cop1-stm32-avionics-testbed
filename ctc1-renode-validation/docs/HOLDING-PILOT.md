@@ -186,3 +186,6 @@ python tests/test_holding_capture.py
 The planned hardware check is a prerequisite for a timed receiver model.
 Physical holding times and any effect on buffer or feedback selection remain
 unmeasured.
+
+The [fixed-trace sensitivity screen](HOLDING-SENSITIVITY.md) records how much
+extra holding creates overlap in the original one-slot software schedules.
