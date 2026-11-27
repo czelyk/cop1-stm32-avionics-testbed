@@ -38,8 +38,13 @@
     },
     {
       "path": "docs/HOLDING-PILOT.md",
-      "bytes": 7191,
-      "sha256": "9e2a2212f055a890192ee29097ba059133a67601305b3ab65cea48504a6e0ae6"
+      "bytes": 9795,
+      "sha256": "deed191814b7beabae8567fdcc2297e865ac11cae01351f68f7aec4b86c6a7ed"
+    },
+    {
+      "path": "docs/HOLDING-SENSITIVITY.md",
+      "bytes": 2806,
+      "sha256": "66427b68a49b91c5f9d12d5d26a726408b212281f61e0a1db43c9d0757af004a"
     },
     {
       "path": "docs/TIMING-PROBE.md",
@@ -60,6 +65,11 @@
       "path": "evidence/holding-pilot/renode.json",
       "bytes": 25727,
       "sha256": "42371bc29b7257415829a9ac9a65b6979cd8353165d9441dd7bb68ae5f2fae89"
+    },
+    {
+      "path": "evidence/holding-sensitivity/summary.json",
+      "bytes": 11180,
+      "sha256": "8eb79656ad0a34bb756350b341a0baa4e148af5ac729355733b6fe089c8d1129"
     },
     {
       "path": "evidence/packaging-20261022/FROZEN-CAMPAIGN.json",
@@ -518,8 +528,13 @@
     },
     {
       "path": "tests/analyze_holding_capture.py",
-      "bytes": 9589,
-      "sha256": "4cb07baf0557b969e0e311205ca6f51914c830f14f05fa7b1a967e7e5c98ecf0"
+      "bytes": 10180,
+      "sha256": "5a1ddf07eeac127d04ebdcef12bde206d9d7343148b3a42d08c998e77f631370"
+    },
+    {
+      "path": "tests/convert_holding_vcd.py",
+      "bytes": 5353,
+      "sha256": "e1b99da5f6369dec934d4cc46e189668c890425f01da212d58e47ec9402e2f60"
     },
     {
       "path": "tests/run.py",
@@ -537,9 +552,14 @@
       "sha256": "284c0d48b9a6542ba867e48442a98557e9bf29c35cf6bb7e45206bb2d7bcb081"
     },
     {
+      "path": "tests/screen_holding_sensitivity.py",
+      "bytes": 4903,
+      "sha256": "e05f8a62f4a3f3f241597e5c117c3b11ca2f09fa05a0de86ed5fd9233bd57164"
+    },
+    {
       "path": "tests/test_holding_capture.py",
-      "bytes": 6075,
-      "sha256": "53058f4305e17f4692be2285690b7a3354377c0d53bb588ff7cefd3e2e7e9f35"
+      "bytes": 9666,
+      "sha256": "2456ec988b2561c5283553e42ac40668aa3597da90dcf24d6161f1d7c9ab6d3b"
     },
     {
       "path": "tests/test_timing_wire.py",

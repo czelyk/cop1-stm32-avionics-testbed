@@ -1,0 +1,353 @@
+{
+  "physical_measurements": false,
+  "model": "fixed successful admissions, uniform extra release delay",
+  "cases": [
+    {
+      "trace": "r256000_none_fast_high_n1_s11.jsonl",
+      "sha256": "645b3f461925139cc512fa02601987627754880e3b4ad89b8b9f31e74d4cc224",
+      "rate_bps": 256000,
+      "loss": "none",
+      "feedback": "fast_high",
+      "seed": 11,
+      "successful_admissions": 16,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 77,
+      "minimum_slack_us": 566,
+      "first_extra_delay_requiring_overlap_us": 567,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 754,
+        "earlier_release_us": 782,
+        "later_admission_us": 1348
+      }
+    },
+    {
+      "trace": "r256000_none_fast_high_n1_s29.jsonl",
+      "sha256": "b99260ae3bf6c97c0eb94ac15305f56344ace0ea940957f0918bc8f107e9b5d6",
+      "rate_bps": 256000,
+      "loss": "none",
+      "feedback": "fast_high",
+      "seed": 29,
+      "successful_admissions": 20,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 523,
+      "first_extra_delay_requiring_overlap_us": 524,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 64373,
+        "earlier_release_us": 64425,
+        "later_admission_us": 64948
+      }
+    },
+    {
+      "trace": "r256000_none_slow_low_n1_s11.jsonl",
+      "sha256": "828a9bb5781d20d4cc4577fb64789e4af817f3167c3be293e967fc2928451f8c",
+      "rate_bps": 256000,
+      "loss": "none",
+      "feedback": "slow_low",
+      "seed": 11,
+      "successful_admissions": 16,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 566,
+      "first_extra_delay_requiring_overlap_us": 567,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 754,
+        "earlier_release_us": 782,
+        "later_admission_us": 1348
+      }
+    },
+    {
+      "trace": "r256000_none_slow_low_n1_s29.jsonl",
+      "sha256": "5f857fe197729ab6a71ca29f00f529a4c9285fcd2c6f5f8b3581af2d0ae3313b",
+      "rate_bps": 256000,
+      "loss": "none",
+      "feedback": "slow_low",
+      "seed": 29,
+      "successful_admissions": 20,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 523,
+      "first_extra_delay_requiring_overlap_us": 524,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 64373,
+        "earlier_release_us": 64425,
+        "later_admission_us": 64948
+      }
+    },
+    {
+      "trace": "r256000_periodic_10pct_fast_high_n1_s11.jsonl",
+      "sha256": "5e9cf8e0214ceda5d8654c73d03427b43b84e1633db04615cc459fd04545ff30",
+      "rate_bps": 256000,
+      "loss": "periodic_10pct",
+      "feedback": "fast_high",
+      "seed": 11,
+      "successful_admissions": 16,
+      "other_farm_results_by_occupancy": {
+        "0": 1,
+        "1": 2
+      },
+      "original_longest_hold_us": 104,
+      "minimum_slack_us": 485,
+      "first_extra_delay_requiring_overlap_us": 486,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 22038,
+        "earlier_release_us": 22066,
+        "later_admission_us": 22551
+      }
+    },
+    {
+      "trace": "r256000_periodic_10pct_fast_high_n1_s29.jsonl",
+      "sha256": "46c193354685f1a6c06eadb8c0fc734a4815ddcdae15162369325f17b26a9d5b",
+      "rate_bps": 256000,
+      "loss": "periodic_10pct",
+      "feedback": "fast_high",
+      "seed": 29,
+      "successful_admissions": 20,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 523,
+      "first_extra_delay_requiring_overlap_us": 524,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 64373,
+        "earlier_release_us": 64425,
+        "later_admission_us": 64948
+      }
+    },
+    {
+      "trace": "r256000_periodic_10pct_slow_low_n1_s11.jsonl",
+      "sha256": "e10fda16029a648319598cba19474fb6297b990eb760b934a8178593a9022798",
+      "rate_bps": 256000,
+      "loss": "periodic_10pct",
+      "feedback": "slow_low",
+      "seed": 11,
+      "successful_admissions": 16,
+      "other_farm_results_by_occupancy": {
+        "0": 1,
+        "1": 2
+      },
+      "original_longest_hold_us": 104,
+      "minimum_slack_us": 485,
+      "first_extra_delay_requiring_overlap_us": 486,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 22038,
+        "earlier_release_us": 22066,
+        "later_admission_us": 22551
+      }
+    },
+    {
+      "trace": "r256000_periodic_10pct_slow_low_n1_s29.jsonl",
+      "sha256": "923f92e815046b31ad4d45a01a4117eda2e33f8fa7ecc4b3048b2fc41b597eed",
+      "rate_bps": 256000,
+      "loss": "periodic_10pct",
+      "feedback": "slow_low",
+      "seed": 29,
+      "successful_admissions": 20,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 523,
+      "first_extra_delay_requiring_overlap_us": 524,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 64373,
+        "earlier_release_us": 64425,
+        "later_admission_us": 64948
+      }
+    },
+    {
+      "trace": "r4000_none_fast_high_n1_s11.jsonl",
+      "sha256": "b93094ea2e8e1e122ea61fb403d49e46490940bcf4086fc8ec31e0a16b1d77e7",
+      "rate_bps": 4000,
+      "loss": "none",
+      "feedback": "fast_high",
+      "seed": 11,
+      "successful_admissions": 14,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 37972,
+      "first_extra_delay_requiring_overlap_us": 37973,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 38160,
+        "earlier_release_us": 38188,
+        "later_admission_us": 76160
+      }
+    },
+    {
+      "trace": "r4000_none_fast_high_n1_s29.jsonl",
+      "sha256": "d1ae47920ae73d803c29f542b0ba417423597c2c1ae5530b48ce870374587923",
+      "rate_bps": 4000,
+      "loss": "none",
+      "feedback": "fast_high",
+      "seed": 29,
+      "successful_admissions": 18,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 137933,
+      "first_extra_delay_requiring_overlap_us": 137934,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 1348209,
+        "earlier_release_us": 1348261,
+        "later_admission_us": 1486194
+      }
+    },
+    {
+      "trace": "r4000_none_slow_low_n1_s11.jsonl",
+      "sha256": "b8311e76c64d3450dea0be8566c4f9b58224a86755dc16521755ca945638f985",
+      "rate_bps": 4000,
+      "loss": "none",
+      "feedback": "slow_low",
+      "seed": 11,
+      "successful_admissions": 14,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 37972,
+      "first_extra_delay_requiring_overlap_us": 37973,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 38160,
+        "earlier_release_us": 38188,
+        "later_admission_us": 76160
+      }
+    },
+    {
+      "trace": "r4000_none_slow_low_n1_s29.jsonl",
+      "sha256": "b8266f93adfdd837ab2e01148ee47193c346d83d4747901e8c56ba276ae5ea31",
+      "rate_bps": 4000,
+      "loss": "none",
+      "feedback": "slow_low",
+      "seed": 29,
+      "successful_admissions": 18,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 137933,
+      "first_extra_delay_requiring_overlap_us": 137934,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 1348209,
+        "earlier_release_us": 1348261,
+        "later_admission_us": 1486194
+      }
+    },
+    {
+      "trace": "r4000_periodic_10pct_fast_high_n1_s11.jsonl",
+      "sha256": "b082a88a3e5ef3f089e8f9ef308a0e41d925a59c82017daae4a5f0bf43a6e48f",
+      "rate_bps": 4000,
+      "loss": "periodic_10pct",
+      "feedback": "fast_high",
+      "seed": 11,
+      "successful_admissions": 14,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 37972,
+      "first_extra_delay_requiring_overlap_us": 37973,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 38160,
+        "earlier_release_us": 38188,
+        "later_admission_us": 76160
+      }
+    },
+    {
+      "trace": "r4000_periodic_10pct_fast_high_n1_s29.jsonl",
+      "sha256": "6489bfc3d4432a1a625c7324cebd8cc5e8a1ed6912180f11699858f2f9b86756",
+      "rate_bps": 4000,
+      "loss": "periodic_10pct",
+      "feedback": "fast_high",
+      "seed": 29,
+      "successful_admissions": 18,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 137933,
+      "first_extra_delay_requiring_overlap_us": 137934,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 1348209,
+        "earlier_release_us": 1348261,
+        "later_admission_us": 1486194
+      }
+    },
+    {
+      "trace": "r4000_periodic_10pct_slow_low_n1_s11.jsonl",
+      "sha256": "225b042ca7d8d14e3df186253568e10160845be92fd045ccb056c44c2ee991d9",
+      "rate_bps": 4000,
+      "loss": "periodic_10pct",
+      "feedback": "slow_low",
+      "seed": 11,
+      "successful_admissions": 14,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 37972,
+      "first_extra_delay_requiring_overlap_us": 37973,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 38160,
+        "earlier_release_us": 38188,
+        "later_admission_us": 76160
+      }
+    },
+    {
+      "trace": "r4000_periodic_10pct_slow_low_n1_s29.jsonl",
+      "sha256": "b12a9b56f9e5173e110d77dfc643bd423356b22e3ca50dd7275bda202cb8792c",
+      "rate_bps": 4000,
+      "loss": "periodic_10pct",
+      "feedback": "slow_low",
+      "seed": 29,
+      "successful_admissions": 18,
+      "other_farm_results_by_occupancy": {},
+      "original_longest_hold_us": 60,
+      "minimum_slack_us": 137933,
+      "first_extra_delay_requiring_overlap_us": 137934,
+      "peak_at_slack": 1,
+      "peak_at_first_overlap": 2,
+      "witness": {
+        "earlier_admission_us": 1348209,
+        "earlier_release_us": 1348261,
+        "later_admission_us": 1486194
+      }
+    }
+  ],
+  "by_rate": {
+    "4000": {
+      "traces": 8,
+      "minimum_first_overlap_us": 37973,
+      "maximum_first_overlap_us": 137934,
+      "threshold_counts": {
+        "37973": 4,
+        "137934": 4
+      }
+    },
+    "256000": {
+      "traces": 8,
+      "minimum_first_overlap_us": 486,
+      "maximum_first_overlap_us": 567,
+      "threshold_counts": {
+        "486": 2,
+        "524": 4,
+        "567": 2
+      }
+    }
+  }
+}

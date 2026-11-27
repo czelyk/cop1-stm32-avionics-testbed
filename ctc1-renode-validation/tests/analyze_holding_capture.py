@@ -86,7 +86,8 @@ def match_uart(path, uart, digest):
     return records
 
 
-def align(report, pulses, requests, records, resolution_s):
+def align(report, pulses, requests, records, resolution_s, rx_stop_error_s):
+    rx_order_bound = resolution_s + rx_stop_error_s
     comparisons = report["comparisons"]
     require([case["mode_order"] for case in comparisons] == [[1, 2], [2, 1]],
             "Expected one comparison in each execution order")
@@ -132,10 +133,10 @@ def align(report, pulses, requests, records, resolution_s):
                 expected_tc = frame(outcome["tc_sequence"], commit_payload)
                 matching = [end for op, sequence, payload, end in requests
                             if (op, sequence, payload) == (1, diag[1], expected_tc)
-                            and lower_bound < end <= first_tx + resolution_s]
+                            and lower_bound < end <= first_tx + rx_order_bound]
                 require(len(matching) == 1, f"{name} command {uid} has no unique matching RX request")
                 admission_delay = rise - matching[0]
-                require(admission_delay >= -resolution_s,
+                require(admission_delay >= -rx_order_bound,
                         f"{name} command {uid} PD12 rises before the RX request is complete")
                 require(first_tx >= rise - resolution_s, "Admission UART starts before PD12 rises")
                 separation = first_tx - fall
@@ -145,7 +146,7 @@ def align(report, pulses, requests, records, resolution_s):
                 cycles = entry["dwt_cycles"]
                 rows.append(dict(command_uid=uid, gpio_us=(fall - rise) * 1e6,
                                  rx_complete_to_gpio_us=admission_delay * 1e6,
-                                 rx_to_gpio_order_ambiguous=abs(admission_delay) <= resolution_s,
+                                 rx_to_gpio_order_ambiguous=abs(admission_delay) <= rx_order_bound,
                                  first_diagnostic_tx_minus_release_us=separation * 1e6,
                                  diagnostic_order_ambiguous=ambiguous, dwt_cycles=cycles,
                                  dwt_nominal_us=cycles * 1e6 / CLOCKS["board"] if cycles is not None else None))
@@ -158,15 +159,19 @@ def align(report, pulses, requests, records, resolution_s):
     return result
 
 
-def analyze(summary, uart_log, capture, resolution_us):
+def analyze(summary, uart_log, capture, resolution_us, rx_stop_error_us=0):
     require(isfinite(resolution_us) and resolution_us > 0, "Capture resolution must be positive")
+    require(isfinite(rx_stop_error_us) and rx_stop_error_us >= 0, "RX stop-bit error bound must be nonnegative")
     report = json.loads(summary.read_text(encoding="utf-8"))
     require(report["mode"] == "board", "Analyze a board run, not a Renode report")
     pulses, uart = read_capture(capture)
     requests = decode_requests(uart["rx"])
     records = match_uart(uart_log, uart["tx"], report["uart_sha256"])
-    return dict(resolution_us=resolution_us, paired_delta_quantization_bound_us=4 * resolution_us,
-                comparisons=align(report, pulses, requests, records, resolution_us / 1e6))
+    return dict(resolution_us=resolution_us, rx_stop_error_bound_us=rx_stop_error_us,
+                rx_order_bound_us=resolution_us + rx_stop_error_us,
+                paired_delta_quantization_bound_us=4 * resolution_us,
+                comparisons=align(report, pulses, requests, records,
+                                  resolution_us / 1e6, rx_stop_error_us / 1e6))
 
 
 def main():
@@ -175,9 +180,11 @@ def main():
     parser.add_argument("board_uart_jsonl", type=Path)
     parser.add_argument("capture_csv", type=Path)
     parser.add_argument("--resolution-us", type=float, required=True, help="Logic analyzer sample period in microseconds")
+    parser.add_argument("--rx-stop-error-us", type=float, default=0,
+                        help="Additional RX stop-bit timestamp error bound, excluding sample quantization")
     args = parser.parse_args()
     try:
-        result = analyze(args.holding_json, args.board_uart_jsonl, args.capture_csv, args.resolution_us)
+        result = analyze(args.holding_json, args.board_uart_jsonl, args.capture_csv, args.resolution_us, args.rx_stop_error_us)
     except (RuntimeError, ValueError, OSError, KeyError) as exc:
         parser.exit(1, f"Invalid capture: {exc}\n")
     print(json.dumps(result, indent=2))
