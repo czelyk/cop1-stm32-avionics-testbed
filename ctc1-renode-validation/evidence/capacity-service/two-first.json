@@ -1,0 +1,2443 @@
+{
+  "hold-00": {
+    "runs": [
+      {
+        "capacity": 1,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 16226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 159094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 161334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 198574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 245814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 288684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 290924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 8 \u00b7 FARM 64"
+          },
+          {
+            "t": 303831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 306071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 128"
+          },
+          {
+            "t": 329228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 64"
+          },
+          {
+            "t": 339228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 391468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 256"
+          },
+          {
+            "t": 432062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 434302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 439302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 13 \u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 441542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 538782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "configured_hold_ticks": 0,
+        "blocked_full_count": 0,
+        "first_blocked_full": null,
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 111623,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 159094,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 117780,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 196334,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 125937,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 243574,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 134094,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 288684,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 252370,
+            "frame_sha256": "8e3d85b24a47b9d259ee66e5682bcb2fdd6da5dc3bc41f8378879d6525b61062",
+            "collected_us": 303831,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 256527,
+            "frame_sha256": "a875752ed68dfb2a5d686a8ba0b8a6df35fe912c6b3e5d9f1e3b5437f2349d36",
+            "collected_us": 329228,
+            "farm_result": 128,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 258684,
+            "frame_sha256": "b944ab7f51747256707eb51105fc24273c22d6cc7c09fb87033fda8ae9275a59",
+            "collected_us": 339228,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 298831,
+            "frame_sha256": "29c8a41faa39a8f037d8207afdae71feb60ba814ceba0cd9af48022686ae8cb7",
+            "collected_us": 384228,
+            "farm_result": 248,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 314228,
+            "frame_sha256": "77455bf844f0f1955f95f121f35983cce015a7297c088284f1c53f52cd7628c4",
+            "collected_us": 432062,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 12,
+            "ingress_us": 392062,
+            "frame_sha256": "d9ab785e973d7e4c766bce8f2863d4c4d04dd8bc3d0b4fbf707d1f033ec91142",
+            "collected_us": 439302,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          }
+        ],
+        "summary_sha256": "a56ee63a1f1d080e8b687e88912060de4a32edb75ef6f4bc2fc74952d9110db2",
+        "trace_sha256": "e6d699624ac5f9b68ae0124a5bb442afd0e7ad50011e461907de73755fc9d230",
+        "p95_source_to_sink_virtual_us": 286929,
+        "max_source_to_sink_virtual_us": 301186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 538782,
+        "time_quantum_bound_us": 5000
+      },
+      {
+        "capacity": 2,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 16226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 51226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 159094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 166334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 196334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 198574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 243574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 245814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 288684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 290924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 8 \u00b7 FARM 64"
+          },
+          {
+            "t": 303831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 306071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 128"
+          },
+          {
+            "t": 329228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 64"
+          },
+          {
+            "t": 339228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 391468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 256"
+          },
+          {
+            "t": 432062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 434302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 439302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 13 \u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 441542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 538782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "configured_hold_ticks": 0,
+        "blocked_full_count": 0,
+        "first_blocked_full": null,
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 111623,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 159094,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 117780,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 196334,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 125937,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 243574,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 134094,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 288684,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 252370,
+            "frame_sha256": "8e3d85b24a47b9d259ee66e5682bcb2fdd6da5dc3bc41f8378879d6525b61062",
+            "collected_us": 303831,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 256527,
+            "frame_sha256": "a875752ed68dfb2a5d686a8ba0b8a6df35fe912c6b3e5d9f1e3b5437f2349d36",
+            "collected_us": 329228,
+            "farm_result": 128,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 258684,
+            "frame_sha256": "b944ab7f51747256707eb51105fc24273c22d6cc7c09fb87033fda8ae9275a59",
+            "collected_us": 339228,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 298831,
+            "frame_sha256": "29c8a41faa39a8f037d8207afdae71feb60ba814ceba0cd9af48022686ae8cb7",
+            "collected_us": 384228,
+            "farm_result": 248,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 314228,
+            "frame_sha256": "77455bf844f0f1955f95f121f35983cce015a7297c088284f1c53f52cd7628c4",
+            "collected_us": 432062,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 12,
+            "ingress_us": 392062,
+            "frame_sha256": "d9ab785e973d7e4c766bce8f2863d4c4d04dd8bc3d0b4fbf707d1f033ec91142",
+            "collected_us": 439302,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          }
+        ],
+        "summary_sha256": "3bbb45ee6d45339f23d06ee05be75d1673035bb2a8255b7b4c7a047c303bef0f",
+        "trace_sha256": "8b5b45cff86e34cd518bab8da9d3648c8fd3c2a81442a417c67796672f013e6b",
+        "p95_source_to_sink_virtual_us": 286929,
+        "max_source_to_sink_virtual_us": 301186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 538782,
+        "time_quantum_bound_us": 5000
+      }
+    ],
+    "max": 538782,
+    "focus": 161334,
+    "configured_hold_ticks": 0,
+    "events_differ": true,
+    "source_sha256": "efcce1eed575f1dfcbcd678e8bbe74506156b104961f40428dccd33a4ca198c4",
+    "corresponding_frame_two_slots": null,
+    "comparison": "\u00c4\u00b0lk farkl\u00c4\u00b1 olay zamana i\u00c5\u0178aretlendi."
+  },
+  "hold-05": {
+    "runs": [
+      {
+        "capacity": 1,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 26226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 164094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 166334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 201334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 201334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 203574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 248574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 248574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 250814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 293684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 295924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 8 \u00b7 FARM 64"
+          },
+          {
+            "t": 308831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 311071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 128"
+          },
+          {
+            "t": 334228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 64"
+          },
+          {
+            "t": 344228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 396468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 256"
+          },
+          {
+            "t": 437062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 437062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 13 \u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 444302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 446542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 543782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "configured_hold_ticks": 5,
+        "blocked_full_count": 0,
+        "first_blocked_full": null,
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 111623,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 159094,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 117780,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 196334,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 125937,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 243574,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 134094,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 288684,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 252370,
+            "frame_sha256": "8e3d85b24a47b9d259ee66e5682bcb2fdd6da5dc3bc41f8378879d6525b61062",
+            "collected_us": 303831,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 256527,
+            "frame_sha256": "a875752ed68dfb2a5d686a8ba0b8a6df35fe912c6b3e5d9f1e3b5437f2349d36",
+            "collected_us": 329228,
+            "farm_result": 128,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 258684,
+            "frame_sha256": "b944ab7f51747256707eb51105fc24273c22d6cc7c09fb87033fda8ae9275a59",
+            "collected_us": 339228,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 303831,
+            "frame_sha256": "29c8a41faa39a8f037d8207afdae71feb60ba814ceba0cd9af48022686ae8cb7",
+            "collected_us": 384228,
+            "farm_result": 248,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 319228,
+            "frame_sha256": "77455bf844f0f1955f95f121f35983cce015a7297c088284f1c53f52cd7628c4",
+            "collected_us": 432062,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 12,
+            "ingress_us": 397062,
+            "frame_sha256": "d9ab785e973d7e4c766bce8f2863d4c4d04dd8bc3d0b4fbf707d1f033ec91142",
+            "collected_us": 437062,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          }
+        ],
+        "summary_sha256": "328b826c38be0ebe3d206ae75c61a0611a03652aba068e5cf1002691a49621b5",
+        "trace_sha256": "3fab2eaf0cd7b7a78692beb831c1a4572c498c16c38aa023c20718258bc1cd24",
+        "p95_source_to_sink_virtual_us": 291929,
+        "max_source_to_sink_virtual_us": 306186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 543782,
+        "time_quantum_bound_us": 5000
+      },
+      {
+        "capacity": 2,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 21226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 26226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 56226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 101226,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 164094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 166334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 201334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 201334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 203574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 248574,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 248574,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 250814,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 288684,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 293684,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 295924,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 303831,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 8 \u00b7 FARM 64"
+          },
+          {
+            "t": 308831,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 311071,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 329228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 128"
+          },
+          {
+            "t": 334228,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 339228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 64"
+          },
+          {
+            "t": 344228,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 384228,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 248"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 389228,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 396468,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 432062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 256"
+          },
+          {
+            "t": 437062,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 437062,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 13 \u00b7 FARM 14"
+          },
+          {
+            "t": 439302,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 444302,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 446542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 543782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "configured_hold_ticks": 5,
+        "blocked_full_count": 0,
+        "first_blocked_full": null,
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 111623,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 159094,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 117780,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 196334,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 125937,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 243574,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 134094,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 288684,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 252370,
+            "frame_sha256": "8e3d85b24a47b9d259ee66e5682bcb2fdd6da5dc3bc41f8378879d6525b61062",
+            "collected_us": 303831,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 256527,
+            "frame_sha256": "a875752ed68dfb2a5d686a8ba0b8a6df35fe912c6b3e5d9f1e3b5437f2349d36",
+            "collected_us": 329228,
+            "farm_result": 128,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 258684,
+            "frame_sha256": "b944ab7f51747256707eb51105fc24273c22d6cc7c09fb87033fda8ae9275a59",
+            "collected_us": 339228,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 303831,
+            "frame_sha256": "29c8a41faa39a8f037d8207afdae71feb60ba814ceba0cd9af48022686ae8cb7",
+            "collected_us": 384228,
+            "farm_result": 248,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 319228,
+            "frame_sha256": "77455bf844f0f1955f95f121f35983cce015a7297c088284f1c53f52cd7628c4",
+            "collected_us": 432062,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 12,
+            "ingress_us": 397062,
+            "frame_sha256": "d9ab785e973d7e4c766bce8f2863d4c4d04dd8bc3d0b4fbf707d1f033ec91142",
+            "collected_us": 437062,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          }
+        ],
+        "summary_sha256": "5d6e7ad8aa9051ff5d258f2b8e8e89cb90d9e106204e3a556d3d29627bad1f1a",
+        "trace_sha256": "a8889e87181de116b545f5a981b79af467171973946eff766362d27bf8f64344",
+        "p95_source_to_sink_virtual_us": 291929,
+        "max_source_to_sink_virtual_us": 306186,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 543782,
+        "time_quantum_bound_us": 5000
+      }
+    ],
+    "max": 543782,
+    "focus": 16226,
+    "configured_hold_ticks": 5,
+    "events_differ": false,
+    "source_sha256": "efcce1eed575f1dfcbcd678e8bbe74506156b104961f40428dccd33a4ca198c4",
+    "corresponding_frame_two_slots": null,
+    "comparison": "\u00c4\u00b0ki ko\u00c5\u0178uda g\u00c3\u00b6sterilen olaylar ve zamanlar\u00c4\u00b1 ayn\u00c4\u00b1."
+  },
+  "hold-15": {
+    "runs": [
+      {
+        "capacity": 1,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 21226,
+            "kind": "rejected",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM -1"
+          },
+          {
+            "t": 31226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 51226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00b7 V(R) 0 \u00b7 FARM -3"
+          },
+          {
+            "t": 101226,
+            "kind": "rejected",
+            "detail": "Doluluk 0 \u00b7 V(R) 0 \u00b7 FARM -3"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 0 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 1"
+          },
+          {
+            "t": 103466,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 0"
+          },
+          {
+            "t": 104060,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 1"
+          },
+          {
+            "t": 109060,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 109092,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 2"
+          },
+          {
+            "t": 125406,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 140406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 155406,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 155406,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 155406,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 185406,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 200406,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 202646,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 235117,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 250117,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 252357,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 268514,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 283514,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 283514,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 285754,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 317786,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 332786,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 332786,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 335026,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 363058,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 378058,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 380298,
+            "kind": "clcw",
+            "detail": "N(R) 7 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 398455,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 8 \u00b7 FARM 192"
+          },
+          {
+            "t": 413455,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 413455,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 415695,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 441289,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 220"
+          },
+          {
+            "t": 456289,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 456289,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 456289,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 456289,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 456289,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 456289,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 92"
+          },
+          {
+            "t": 458529,
+            "kind": "clcw",
+            "detail": "N(R) 9 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 473529,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 473529,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 473529,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 503529,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 256"
+          },
+          {
+            "t": 508529,
+            "kind": "rejected",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM -1"
+          },
+          {
+            "t": 518529,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 525769,
+            "kind": "clcw",
+            "detail": "N(R) 11 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 1"
+          },
+          {
+            "t": 525769,
+            "kind": "retry",
+            "detail": "TC s\u00c4\u00b1ra 11"
+          },
+          {
+            "t": 531363,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 14"
+          },
+          {
+            "t": 546363,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 548603,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 650843,
+            "kind": "clcw",
+            "detail": "N(R) 12 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 1,
+        "configured_hold_ticks": 15,
+        "blocked_full_count": 2,
+        "first_blocked_full": {
+          "ingress_us": 3037,
+          "collected_us": 21226,
+          "sequence": 0,
+          "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d"
+        },
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": -1,
+            "flags": 24,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": -3,
+            "flags": 8,
+            "owned": 0
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": -3,
+            "flags": 8,
+            "owned": 0
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 104060,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 109060,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 109092,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 140406,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 117249,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 185406,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 125406,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 235117,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 208803,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 268514,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 216960,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 317786,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 225117,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 363058,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 258514,
+            "frame_sha256": "7e33dc4e45dc96d979be0cbd16189c79b3db3be0569460e1ce1fc39314001b12",
+            "collected_us": 398455,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 292786,
+            "frame_sha256": "5000e0f6d7742a7422a33cc552d8a6502c2992b6ef9f784d1406ed9c341e7e15",
+            "collected_us": 441289,
+            "farm_result": 220,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 338058,
+            "frame_sha256": "ac55399e225d7655bfb749fe3bd83f82219bfb1b2f9fa0565d54fbab76c932ea",
+            "collected_us": 456289,
+            "farm_result": 92,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 388455,
+            "frame_sha256": "2c0881506d086ab9d6d6abedbb07032d2b3a7c19deaa7159c287d7d609f71f42",
+            "collected_us": 503529,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 416289,
+            "frame_sha256": "47ef86230470efb3629e8c3d84ed0f02c9eea7f18fcfe4817388bcf49e6e625d",
+            "collected_us": 508529,
+            "farm_result": -1,
+            "flags": 24,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 526363,
+            "frame_sha256": "47ef86230470efb3629e8c3d84ed0f02c9eea7f18fcfe4817388bcf49e6e625d",
+            "collected_us": 531363,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 1
+          }
+        ],
+        "summary_sha256": "821ec2922155760f5d75e31ae0fef2beda54dabdcf093850c0b10e76deba0930",
+        "trace_sha256": "a1735704def65a0d3d5694f8e450c64970dd307789e87886f3579aad0ae67a2a",
+        "p95_source_to_sink_virtual_us": 395886,
+        "max_source_to_sink_virtual_us": 410810,
+        "sink": 24,
+        "frames": 17,
+        "retries": 4,
+        "clcw_wait": 0,
+        "clcw_retry": 2,
+        "elapsed_us": 650843,
+        "time_quantum_bound_us": 5000
+      },
+      {
+        "capacity": 2,
+        "events": [
+          {
+            "t": 16226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 0 \u00b7 FARM 64"
+          },
+          {
+            "t": 21226,
+            "kind": "accept",
+            "detail": "Doluluk 2 \u00b7 V(R) 1 \u00b7 FARM 14"
+          },
+          {
+            "t": 31226,
+            "kind": "commit",
+            "detail": "Komut 7"
+          },
+          {
+            "t": 46226,
+            "kind": "commit",
+            "detail": "Komut 0"
+          },
+          {
+            "t": 51226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 2 \u00b7 FARM 156"
+          },
+          {
+            "t": 66226,
+            "kind": "commit",
+            "detail": "Komut 9"
+          },
+          {
+            "t": 66226,
+            "kind": "commit",
+            "detail": "Komut 6"
+          },
+          {
+            "t": 66226,
+            "kind": "commit",
+            "detail": "Komut 5"
+          },
+          {
+            "t": 101226,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 3 \u00b7 FARM 256"
+          },
+          {
+            "t": 103466,
+            "kind": "clcw",
+            "detail": "N(R) 3 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 111623,
+            "kind": "commit",
+            "detail": "Komut 11"
+          },
+          {
+            "t": 159094,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 4 \u00b7 FARM 256"
+          },
+          {
+            "t": 174094,
+            "kind": "commit",
+            "detail": "Komut 1"
+          },
+          {
+            "t": 176334,
+            "kind": "clcw",
+            "detail": "N(R) 4 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 196334,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 5 \u00b7 FARM 192"
+          },
+          {
+            "t": 211334,
+            "kind": "commit",
+            "detail": "Komut 2"
+          },
+          {
+            "t": 211334,
+            "kind": "commit",
+            "detail": "Komut 8"
+          },
+          {
+            "t": 213574,
+            "kind": "clcw",
+            "detail": "N(R) 5 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 243574,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 6 \u00b7 FARM 256"
+          },
+          {
+            "t": 256527,
+            "kind": "commit",
+            "detail": "Komut 4"
+          },
+          {
+            "t": 256527,
+            "kind": "commit",
+            "detail": "Komut 10"
+          },
+          {
+            "t": 258767,
+            "kind": "clcw",
+            "detail": "N(R) 6 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 290799,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 7 \u00b7 FARM 256"
+          },
+          {
+            "t": 305799,
+            "kind": "accept",
+            "detail": "Doluluk 2 \u00b7 V(R) 8 \u00b7 FARM 64"
+          },
+          {
+            "t": 305799,
+            "kind": "commit",
+            "detail": "Komut 3"
+          },
+          {
+            "t": 308039,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 319228,
+            "kind": "commit",
+            "detail": "Komut 22"
+          },
+          {
+            "t": 321468,
+            "kind": "clcw",
+            "detail": "N(R) 8 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 326468,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 9 \u00b7 FARM 128"
+          },
+          {
+            "t": 341468,
+            "kind": "commit",
+            "detail": "Komut 14"
+          },
+          {
+            "t": 366468,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 10 \u00b7 FARM 220"
+          },
+          {
+            "t": 381468,
+            "kind": "commit",
+            "detail": "Komut 21"
+          },
+          {
+            "t": 381468,
+            "kind": "commit",
+            "detail": "Komut 18"
+          },
+          {
+            "t": 381468,
+            "kind": "commit",
+            "detail": "Komut 17"
+          },
+          {
+            "t": 381468,
+            "kind": "commit",
+            "detail": "Komut 13"
+          },
+          {
+            "t": 381468,
+            "kind": "commit",
+            "detail": "Komut 19"
+          },
+          {
+            "t": 383708,
+            "kind": "clcw",
+            "detail": "N(R) 10 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 384302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 11 \u00b7 FARM 92"
+          },
+          {
+            "t": 399302,
+            "kind": "commit",
+            "detail": "Komut 16"
+          },
+          {
+            "t": 399302,
+            "kind": "commit",
+            "detail": "Komut 15"
+          },
+          {
+            "t": 399302,
+            "kind": "commit",
+            "detail": "Komut 12"
+          },
+          {
+            "t": 434302,
+            "kind": "accept",
+            "detail": "Doluluk 1 \u00b7 V(R) 12 \u00b7 FARM 256"
+          },
+          {
+            "t": 439302,
+            "kind": "accept",
+            "detail": "Doluluk 2 \u00b7 V(R) 13 \u00b7 FARM 14"
+          },
+          {
+            "t": 449302,
+            "kind": "commit",
+            "detail": "Komut 20"
+          },
+          {
+            "t": 451542,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 461542,
+            "kind": "commit",
+            "detail": "Komut 23"
+          },
+          {
+            "t": 463782,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          },
+          {
+            "t": 566022,
+            "kind": "clcw",
+            "detail": "N(R) 13 \u00c2\u00b7 WAIT 0 \u00c2\u00b7 RETRANSMIT 0"
+          }
+        ],
+        "peak": 2,
+        "configured_hold_ticks": 15,
+        "blocked_full_count": 0,
+        "first_blocked_full": null,
+        "admission_results": [
+          {
+            "sequence": 255,
+            "ingress_us": 2443,
+            "frame_sha256": "69e6b7710ab42fdac04a723ec91601ed3f047c791e58f58e66b923974a031728",
+            "collected_us": 16226,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 0,
+            "ingress_us": 3037,
+            "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+            "collected_us": 21226,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 2
+          },
+          {
+            "sequence": 1,
+            "ingress_us": 8069,
+            "frame_sha256": "bfdf9f160df90da9ab1c0abf62710bd63b2126ab412af40a2ae5b16f67f0cc57",
+            "collected_us": 51226,
+            "farm_result": 156,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 2,
+            "ingress_us": 16226,
+            "frame_sha256": "70d1adcd0071f72f822b5d3b85b7981e7fe8e8f709684762f6c85c4f232176b2",
+            "collected_us": 101226,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 3,
+            "ingress_us": 111623,
+            "frame_sha256": "7b94cec599b566219ce3c3c2897196f6313426537fe921364422bcffcf30ead6",
+            "collected_us": 159094,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 4,
+            "ingress_us": 117780,
+            "frame_sha256": "13bcb41928589453988a9fefb99069660ab36cc698f4b0106214e9100af02f92",
+            "collected_us": 196334,
+            "farm_result": 192,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 5,
+            "ingress_us": 125937,
+            "frame_sha256": "5abd05f1b0798efad596609bcfd8ac793415f88730ccd0d21e54b0861add2c48",
+            "collected_us": 243574,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 6,
+            "ingress_us": 134094,
+            "frame_sha256": "25640fb0c9bf62f3ddb1bd8e17bf625acf448b79b9a15b092058abcea3b4aa4c",
+            "collected_us": 290799,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 7,
+            "ingress_us": 252370,
+            "frame_sha256": "8e3d85b24a47b9d259ee66e5682bcb2fdd6da5dc3bc41f8378879d6525b61062",
+            "collected_us": 305799,
+            "farm_result": 64,
+            "flags": 0,
+            "owned": 2
+          },
+          {
+            "sequence": 8,
+            "ingress_us": 256527,
+            "frame_sha256": "a875752ed68dfb2a5d686a8ba0b8a6df35fe912c6b3e5d9f1e3b5437f2349d36",
+            "collected_us": 326468,
+            "farm_result": 128,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 9,
+            "ingress_us": 265799,
+            "frame_sha256": "4527fbeb6df9974983f6e6be29128dafa23fe3ff5d31d8899a88f5658bc84c0a",
+            "collected_us": 366468,
+            "farm_result": 220,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 10,
+            "ingress_us": 311071,
+            "frame_sha256": "09cc7a10f43d19de022cbd1bb8cb9fb09e377558deb167c53a8e5dd8849956a6",
+            "collected_us": 384302,
+            "farm_result": 92,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 11,
+            "ingress_us": 319228,
+            "frame_sha256": "77455bf844f0f1955f95f121f35983cce015a7297c088284f1c53f52cd7628c4",
+            "collected_us": 434302,
+            "farm_result": 256,
+            "flags": 0,
+            "owned": 1
+          },
+          {
+            "sequence": 12,
+            "ingress_us": 384302,
+            "frame_sha256": "d9ab785e973d7e4c766bce8f2863d4c4d04dd8bc3d0b4fbf707d1f033ec91142",
+            "collected_us": 439302,
+            "farm_result": 14,
+            "flags": 0,
+            "owned": 2
+          }
+        ],
+        "summary_sha256": "75e582f5a579ea627955d2cc2df073d80b4ca4d1ffee1ec5dcd4b84b1725accf",
+        "trace_sha256": "fb87a63e22506daf3b074d5a20d0ec2c3cba2814144697fc0d07630198461d90",
+        "p95_source_to_sink_virtual_us": 311065,
+        "max_source_to_sink_virtual_us": 316583,
+        "sink": 24,
+        "frames": 14,
+        "retries": 0,
+        "clcw_wait": 0,
+        "clcw_retry": 0,
+        "elapsed_us": 566022,
+        "time_quantum_bound_us": 5000
+      }
+    ],
+    "max": 650843,
+    "focus": 21226,
+    "configured_hold_ticks": 15,
+    "events_differ": true,
+    "source_sha256": "efcce1eed575f1dfcbcd678e8bbe74506156b104961f40428dccd33a4ca198c4",
+    "corresponding_frame_two_slots": {
+      "sequence": 0,
+      "ingress_us": 3037,
+      "frame_sha256": "b869c96e1cb30aa3792d1670fd01418601dd3c7f085c019377b8b3f0eac6220d",
+      "collected_us": 21226,
+      "farm_result": 14,
+      "flags": 0,
+      "owned": 2
+    },
+    "comparison": "\u00c4\u00b0lk farkl\u00c4\u00b1 olay zamana i\u00c5\u0178aretlendi."
+  }
+}

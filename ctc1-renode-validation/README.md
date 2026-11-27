@@ -27,6 +27,8 @@ compares UART diagnostics before and after automatic buffer release.
 
 The [one-versus-two-slot experiment](docs/CAPACITY-PAIR.md) records the matched
 closed-loop runs, the first-frame loss control and the reverse-order repeat.
+The [receive-slot pressure experiment](docs/CAPACITY-SERVICE-SCREEN.md)
+adds a controlled consumer hold and checks when slot count changes admissions.
 
 ## Contents
 

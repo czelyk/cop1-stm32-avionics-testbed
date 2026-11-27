@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2534,
-      "sha256": "b5889d7d95f52b33bff272f48a4b7987607ce64ef14d444cef4f3aa3dbef5115"
+      "bytes": 2685,
+      "sha256": "e600373b5e71f4ea6bfd44b31a75797dec744dbadc095c2e5a7fc36e72728a2a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -40,6 +40,11 @@
       "path": "docs/CAPACITY-PAIR.md",
       "bytes": 3057,
       "sha256": "bb167ea255d83abd3fe5b2835d3ab6c30a0b259914d3f7abb18888be31c389ad"
+    },
+    {
+      "path": "docs/CAPACITY-SERVICE-SCREEN.md",
+      "bytes": 4985,
+      "sha256": "68b488f5551105ecc29f676fdce12358d407ce47fd5388b78626b7c2225bc359"
     },
     {
       "path": "docs/HOLDING-PILOT.md",
@@ -70,6 +75,21 @@
       "path": "evidence/capacity-pair/two-first.json",
       "bytes": 30550,
       "sha256": "31d2318059114324fa1f1f9a3aaa8cfc60146293fb56a4a06c1bdfbf593aa147"
+    },
+    {
+      "path": "evidence/capacity-service/one-first.json",
+      "bytes": 70185,
+      "sha256": "3c8a9ee155f9faceaba940784e859760a8210ff018c614f32b5374f89c0cabb7"
+    },
+    {
+      "path": "evidence/capacity-service/raw-runs.zip",
+      "bytes": 57517,
+      "sha256": "e5cb10b88107db4e89975d94d7709eb182b340a0764745fd2be87bc55b7d7543"
+    },
+    {
+      "path": "evidence/capacity-service/two-first.json",
+      "bytes": 70185,
+      "sha256": "9238f9ac7044726ed40022019d8d1586343d15c8538b1abc3443e92986e53b6e"
     },
     {
       "path": "evidence/holding-pilot/board-build.json",
@@ -473,13 +493,13 @@
     },
     {
       "path": "src/build_firmware.py",
-      "bytes": 1609,
-      "sha256": "6d17387fcfcadffdc22a24fc9d485c51d67c2bd80d1e1942ad333da8fd72ff29"
+      "bytes": 1725,
+      "sha256": "633e5e5a915a7697b6cafa05a0b70ddb91ecfd9d8f8a2c729af46d4a27ab7fe0"
     },
     {
       "path": "src/coupled_renode.py",
-      "bytes": 13330,
-      "sha256": "79583f4c859eca925a32abc898cd7a687b3712b92a8a4eadd3b188a752b93324"
+      "bytes": 13642,
+      "sha256": "748529e8e6167d39d2ceb935bb652e973fc75bc5b9cfc0126996e647e17a17af"
     },
     {
       "path": "src/pool_adapter.c",
@@ -528,8 +548,8 @@
     },
     {
       "path": "src/stm32_firmware.c",
-      "bytes": 12669,
-      "sha256": "ebba3c2b7ee3bcef3625e284dd20e620c7f76c905ab297042c1b8f589ab888f0"
+      "bytes": 13444,
+      "sha256": "28850e2f966371ba56d767581ff6eb0a29873fe270adacac94fdee60760cd51e"
     },
     {
       "path": "src/stm32_profile.repl",
@@ -558,8 +578,8 @@
     },
     {
       "path": "tests/run_capacity_pair.py",
-      "bytes": 2926,
-      "sha256": "a5e94e4f0b572eee9213a50e7e2d7d26e498856d9199e9b58d21caa4c23cfb0e"
+      "bytes": 3528,
+      "sha256": "0e5940ba01b63400958b0235547f6ec1da2f5d23155420ca707e5ab550667afa"
     },
     {
       "path": "tests/run_holding.py",
@@ -578,8 +598,8 @@
     },
     {
       "path": "tests/summarize_capacity_pair.py",
-      "bytes": 4317,
-      "sha256": "3e3623ae1cf2807bba78cc4f8f75f8a2b3740544ff2ede4d0f67a3410b437fa6"
+      "bytes": 6877,
+      "sha256": "937d3972e7c50041bce74b0b27cffdc0532fef8f1d0fcf47a4092325883dd0d8"
     },
     {
       "path": "tests/test_holding_capture.py",

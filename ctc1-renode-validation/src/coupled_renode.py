@@ -74,6 +74,11 @@ def run_case(renode, peer, case, folder):
     state, reset_records = renode.request(0, bytes([case['capacity'], 255, 1]) + struct.pack('>H', case['feedback_ms']))
     assert state[1] == 255 and state[3] == 0 and state[4] == 1
     assert state[13] == state[14] == state[18] == 0
+    if "service_hold_ticks" in case:
+        hold = case["service_hold_ticks"]
+        state, records = renode.request(7, struct.pack(">H", hold))
+        echoes = [record["payload_hex"] for record in records if record["kind"] == 0x86]
+        assert echoes == [struct.pack("<I", hold).hex()] and state[14] == 0
     initial_irq_count = state[11]
     baseline = renode.sim_us
     now, serial_free, ordering = 0, 0, 0

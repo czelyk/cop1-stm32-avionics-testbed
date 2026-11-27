@@ -10,11 +10,13 @@ ROOT = Path(__file__).resolve().parent
 NASA = Path(os.environ['CTC_NASA_DIR'])
 GCC = Path(os.environ['ARM_GCC'])
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--profile', choices=('legacy', 'renode-timing', 'board-timing'), default='legacy')
+parser.add_argument('--profile', choices=('legacy', 'renode-timing', 'board-timing', 'renode-service'), default='legacy')
 profile = parser.parse_args().profile
 defines = []
-if profile != 'legacy':
+if profile in ('renode-timing', 'board-timing'):
     defines.append('-DCTC_TIMING')
+if profile == 'renode-service':
+    defines.append('-DCTC_SERVICE_HOLD')
 if profile == 'board-timing':
     defines.append('-DCTC_BOARD')
 sources = [ROOT / name for name in ('stm32_startup.c', 'stm32_firmware.c', 'pool_adapter.c')]

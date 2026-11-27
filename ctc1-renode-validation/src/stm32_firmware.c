@@ -1,4 +1,4 @@
-/* UART/NVIC/SysTick bench firmware. No inserted synthetic handler delays or RTOS. */
+/* UART/NVIC/SysTick bench firmware. Optional emulated service control. No RTOS. */
 #include <stdint.h>
 #include "cop1.h"
 extern volatile uint32 input[4], output[10];
@@ -17,6 +17,14 @@ static uint16_t reply_length[REPLIES], feedback_period = 100;
 static uint8_t reply_data[REPLIES][256], tx_tm[280], message[300];
 static uint32_t message_size, wanted;
 static uint8_t tm_index;
+
+#ifdef CTC_SERVICE_HOLD
+/* Start of service for the oldest queued FDU, in guest SysTick ticks. */
+static uint32_t head_started, service_hold_ticks;
+#define SERVICE_READY() (ticks - head_started >= service_hold_ticks)
+#else
+#define SERVICE_READY() (1)
+#endif
 
 #ifdef CTC_TIMING
 #ifdef CTC_BOARD
@@ -257,6 +265,9 @@ static void dispatch(void) {
         if (!feedback_period) feedback_period = 100;
         reply_head = reply_tail = reply_count = reply_peak = reply_errors = 0;
         frame_count = max_owned = 0; tm_index = 0; last_feedback = ticks;
+#ifdef CTC_SERVICE_HOLD
+        service_hold_ticks = 0;
+#endif
 #ifdef CTC_TIMING
         for (unsigned i = 0; i < PHASES; ++i) timing_calls[i] = timing_max[i] = 0;
         reset_hold();
@@ -265,6 +276,9 @@ static void dispatch(void) {
         for (uint32_t i = 0; i < n; i++) incoming[i] = message[6 + i];
         input[0] = 1; input[1] = n; timed_step(FARM_SAMPLE); frame_count++;
         if (output[3] > max_owned) max_owned = output[3];
+#ifdef CTC_SERVICE_HOLD
+        if ((int32_t)output[0] > 0 && output[3] == 1) head_started = ticks;
+#endif
 #ifdef CTC_TIMING
         staging = automatic == INLINE_AUTO || automatic == DEFERRED_AUTO;
 #endif
@@ -272,6 +286,12 @@ static void dispatch(void) {
     } else if (op == 2 && !n) { input[0] = 2; timed_step(COMMIT_SAMPLE); enqueue_committed(); }
     else if (op == 3 && !n) { }
     else if (op == 4 && !n) { emit_tm(); }
+#ifdef CTC_SERVICE_HOLD
+    else if (op == 7 && n == 2 && !output[3]) {
+        service_hold_ticks = ((uint32_t)message[6] << 8) | message[7];
+        record(0x86, seq, (const uint8_t *)&service_hold_ticks, sizeof(service_hold_ticks));
+    }
+#endif
 #ifdef CTC_TIMING
     else if (op == 5 && !n) { timing_record(seq); }
     else if (op == 6 && !n) { hold_record(seq); }
@@ -327,9 +347,12 @@ void firmware_main(void) {
     status(0xff);
     for (;;) {
         parse_rx();
-        if (automatic && output[3]) {
+        if (automatic && output[3] && SERVICE_READY()) {
             input[0] = 2;
             timed_step(COMMIT_SAMPLE);
+#ifdef CTC_SERVICE_HOLD
+            if (output[3]) head_started = ticks;
+#endif
             flush_diagnostics();
             enqueue_committed();
         } else {
